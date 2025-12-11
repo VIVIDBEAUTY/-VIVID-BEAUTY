@@ -114,3 +114,13 @@ body {
     margin-left: 4px;
     vertical-align: middle;
 }
+.dark-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45); /* مستوى الشفافية */
+    z-index: -1; /* يخليه خلف المحتوى */
+    backdrop-filter: blur(1.5px); /* يعطي تأثير ناعم */
+}
