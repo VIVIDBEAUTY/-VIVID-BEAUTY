@@ -1,9 +1,38 @@
-/* خلفية الموقع */
+/* خلفية الموقع + الخلفيات المتبدلة */
 body {
-    background: #f7f3ef;
     margin: 0;
-    font-family: "Tahoma", sans-serif;
     direction: rtl;
+    font-family: "Cairo", sans-serif !important;
+    
+    background: #f7f3ef;
+    animation: bgSlide 18s infinite;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@keyframes bgSlide {
+    0%   { background-image: url("bg1.jpg"); }
+    33%  { background-image: url("bg2.jpg"); }
+    66%  { background-image: url("bg3.jpg"); }
+    100% { background-image: url("bg1.jpg"); }
+}
+
+/* طبقة السواد الشفافة فوق الخلفية */
+.dark-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(1.5px);
+    z-index: 0;
+}
+
+/* رفع المحتوى فوق الخلفية + فوق الطبقة */
+body * {
+    position: relative;
+    z-index: 1;
 }
 
 /* الحاوية الأساسية */
@@ -20,7 +49,7 @@ body {
 /* عنوان الصفحة */
 .page-title {
     text-align: center;
-    font-size: 32px;
+    font-size: 26px;
     margin-bottom: 25px;
     color: #6e5a44;
     font-weight: bold;
@@ -30,7 +59,7 @@ body {
 .section-title {
     margin-top: 40px;
     margin-bottom: 15px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: #7a6752;
     border-right: 5px solid #b8a491;
@@ -41,16 +70,16 @@ body {
 .service-item {
     display: flex;
     justify-content: space-between;
-    padding: 12px 0;
-    font-size: 20px;
+    padding: 10px 0;
+    font-size: 17px;
     border-bottom: 1px solid #ddd;
 }
 
-/* أيقونة SAR */
+/* رمز الريال */
 .sar-icon {
-    width: 22px;
+    width: 16px;
+    margin-left: 4px;
     vertical-align: middle;
-    margin-left: 6px;
 }
 
 /* زر العودة */
@@ -74,53 +103,4 @@ body {
     height: 1px;
     background: #c8b7a3;
     margin: 25px 0;
-}
-/* خلفيات متبدلة */
-body {
-    background: #f7f3ef;
-    animation: bgSlide 18s infinite;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-@keyframes bgSlide {
-    0%   { background-image: url("bg1.jpg"); }
-    33%  { background-image: url("bg2.jpg"); }
-    66%  { background-image: url("bg3.jpg"); }
-    100% { background-image: url("bg1.jpg"); }
-}
-/* الخط العام */
-body {
-    font-family: "Cairo", sans-serif !important;
-}
-
-/* حجم النصوص داخل قائمة الخدمات */
-.service-item {
-    font-size: 17px !important; 
-    padding: 10px 0;
-}
-
-.section-title {
-    font-size: 20px !important;
-}
-
-.page-title {
-    font-size: 26px !important;
-}
-
-/* تنسيق رمز الريال */
-.sar-icon {
-    width: 16px;
-    margin-left: 4px;
-    vertical-align: middle;
-}
-.dark-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.45); /* مستوى الشفافية */
-    z-index: -1; /* يخليه خلف المحتوى */
-    backdrop-filter: blur(1.5px); /* يعطي تأثير ناعم */
 }
