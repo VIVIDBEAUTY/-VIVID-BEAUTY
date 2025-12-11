@@ -89,3 +89,28 @@ body {
     66%  { background-image: url("bg3.jpg"); }
     100% { background-image: url("bg1.jpg"); }
 }
+/* الخط العام */
+body {
+    font-family: "Cairo", sans-serif !important;
+}
+
+/* حجم النصوص داخل قائمة الخدمات */
+.service-item {
+    font-size: 17px !important; 
+    padding: 10px 0;
+}
+
+.section-title {
+    font-size: 20px !important;
+}
+
+.page-title {
+    font-size: 26px !important;
+}
+
+/* تنسيق رمز الريال */
+.sar-icon {
+    width: 16px;
+    margin-left: 4px;
+    vertical-align: middle;
+}
