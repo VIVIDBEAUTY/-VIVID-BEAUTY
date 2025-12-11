@@ -197,3 +197,8 @@ body::before{
     font-weight: bold;
     color: #c8bba5;
 }
+/* رمز الريال الجديد */
+.sar {
+    font-weight: 700;
+    margin-left: 4px;
+}
