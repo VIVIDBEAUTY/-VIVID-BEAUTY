@@ -140,11 +140,18 @@ body::before{
 }
 /* حركة النبض على الأيقونات */
 .pulse {
-    animation: pulse 1.8s infinite ease-in-out;
+    display: inline-block;
+    animation: pulse 1.6s infinite ease-in-out;
 }
 
 @keyframes pulse {
-    0%   { transform: scale(1); }
-    50%  { transform: scale(1.15); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.18);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
