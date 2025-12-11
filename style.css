@@ -155,3 +155,45 @@ body::before{
         transform: scale(1);
     }
 }
+.services-section {
+    margin: 60px auto;
+    padding: 25px;
+    width: 90%;
+    max-width: 700px;
+    background: #fff;
+    border-radius: 12px;
+    border: 2px solid #c8bba5;
+    box-shadow: 0 0 20px rgba(0,0,0,0.07);
+}
+
+.services-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #c8bba5;
+    font-size: 28px;
+}
+
+.services-section h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #7a6d5e;
+    font-size: 22px;
+}
+
+.services-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services-section li {
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5ddcf;
+    font-size: 17px;
+}
+
+.services-section span {
+    font-weight: bold;
+    color: #c8bba5;
+}
