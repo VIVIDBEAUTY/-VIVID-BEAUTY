@@ -1,148 +1,156 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
- <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;700&display=swap" rel="stylesheet">
-
-<style>
-body {
-    font-family: 'Noto Kufi Arabic', sans-serif !important;
-    background: #f7f3ef; /* إزالة الخلفية الشفافة واستبدالها بخلفية نظيفة */
-}
-</style>
-<head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>قائمة الخدمات | VIVID BEAUTY</title>
 
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet"
- href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- خط مطابق للـ PDF -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body {
-    background: #f9f5ef;
-    font-family: "Tajawal", sans-serif;
-    padding: 30px;
-}
+    body {
+        margin: 0;
+        padding: 0;
+        background: #f7f3ef; /* نفس خلفية PDF */
+        font-family: 'Noto Kufi Arabic', sans-serif;
+    }
 
-.menu-box {
-    max-width: 800px;
-    margin: auto;
-    background: #ffffffee;
-    padding: 25px;
-    border-radius: 12px;
-    border: 2px solid #c8bba5;
-    box-shadow: 0 0 20px rgba(0,0,0,0.06);
-}
+    .container {
+        width: 90%;
+        max-width: 800px;
+        margin: 40px auto;
+        background: #ffffff;
+        border-radius: 18px;
+        padding: 30px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        border: 1px solid #d8d6d2;
+    }
 
-.menu-box h1 {
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 25px;
-    color: #c8bba5;
-}
+    h1 {
+        text-align: center;
+        font-size: 26px;
+        margin-bottom: 25px;
+        color: #5e564d;
+        font-weight: 700;
+    }
 
-.section-title {
-    font-size: 22px;
-    color: #7a6d5e;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
+    .section-title {
+        margin-top: 35px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #5e564d;
+        text-align: center;
+        border-bottom: 2px solid #ddd3c7;
+        padding-bottom: 8px;
+    }
 
-.service-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 8px 0;
-    border-bottom: 1px solid #e5ddcf;
-    font-size: 18px;
-}
+    .service-item {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #eee;
+        padding: 10px 0;
+        font-size: 17px;
+        color: #444;
+    }
 
-.service-item span {
-    color: #c8bba5;
-    font-weight: bold;
-}
-.back-btn {
-    margin-top: 25px;
-    text-align: center;
-}
+    .sar {
+        font-weight: 700;
+        margin-left: 4px;
+        color: #5e564d;
+    }
 
-.back-btn a {
-    color: white;
-    background: #c8bba5;
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-}
+    .back-btn {
+        text-align: center;
+        margin: 40px 0;
+    }
 
+    .back-btn a {
+        text-decoration: none;
+        background: #5e564d;
+        color: #fff;
+        padding: 12px 25px;
+        border-radius: 10px;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    .back-btn a:hover {
+        background: #7a6f63;
+    }
 </style>
-</head>
 
+</head>
 <body>
 
-<div class="menu-box">
+<div class="container">
 
 <h1>قائمة الخدمات</h1>
 
 <!-- الأظافر -->
 <div class="section-title">الأظافر</div>
 
-<div class="service-item">مونكير عناية بالأيدي سغنيتشر <span class="price"><span class="sar">﷼</span>94</span></div>
-<div class="service-item">بوديكير عناية بالأرجل سغنيتشر <span class="price"><span class="sar">﷼</span>99</span></div>
-<div class="service-item">مونكير عناية بالأيدي كلاسك <span class="price"><span class="sar">﷼</span>79</span></div>
-<div class="service-item">بوديكير عناية بالأرجل كلاسك <span class="price"><span class="sar">﷼</span>84</span></div>
-<div class="service-item">تنظيف روسي كلاسك <span class="price"><span class="sar">﷼</span>99</span></div>
-<div class="service-item">تنظيف روسي سغنيتشر <span class="price"><span class="sar">﷼</span>149</span></div>
-<div class="service-item">تركيب أظافر عادي مع لون <span class="price"><span class="sar">﷼</span>70</span></div>
-<div class="service-item">لون مناكير <span class="price"><span class="sar">﷼</span>16</span></div>
-<div class="service-item">آرت للظفر الواحد <span class="price"><span class="sar">﷼</span>9 - 15</span></div>
-<div class="service-item">فرنسي لون عادي <span class="price"><span class="sar">﷼</span>40</span></div>
-<div class="service-item">أومبري لون عادي <span class="price"><span class="sar">﷼</span>45</span></div>
-<div class="service-item">كروم لون عادي <span class="price"><span class="sar">﷼</span>20</span></div>
+<div class="service-item"><span>مونكير عناية بالأيدي سغنيتشر</span> <span><span class="sar">﷼</span>94</span></div>
+<div class="service-item"><span>بوديكير عناية بالأرجل سغنيتشر</span> <span><span class="sar">﷼</span>99</span></div>
+<div class="service-item"><span>مونكير عناية بالأيدي كلاسك</span> <span><span class="sar">﷼</span>79</span></div>
+<div class="service-item"><span>بوديكير عناية بالأرجل كلاسك</span> <span><span class="sar">﷼</span>84</span></div>
+<div class="service-item"><span>تنظيف روسي كلاسك</span> <span><span class="sar">﷼</span>99</span></div>
+<div class="service-item"><span>تنظيف روسي سغنيتشر</span> <span><span class="sar">﷼</span>149</span></div>
+<div class="service-item"><span>تركيب أظافر مع لون</span> <span><span class="sar">﷼</span>70</span></div>
+<div class="service-item"><span>لون مناكير</span> <span><span class="sar">﷼</span>16</span></div>
+<div class="service-item"><span>آرت للظفر الواحد</span> <span><span class="sar">﷼</span>9 - 15</span></div>
+<div class="service-item"><span>فرنسي لون عادي</span> <span><span class="sar">﷼</span>40</span></div>
+<div class="service-item"><span>أومبري لون عادي</span> <span><span class="sar">﷼</span>45</span></div>
+<div class="service-item"><span>كروم لون عادي</span> <span><span class="sar">﷼</span>20</span></div>
 
-<!-- خدمات الشعر -->
+
+<!-- الشعر -->
 <div class="section-title">خدمات الشعر</div>
 
-<div class="service-item">غسيل الشعر <span class="price"><span class="sar">﷼</span>25</span></div>
-<div class="service-item">غسيل الشعر و ماسك عناية عميق <span class="price"><span class="sar">﷼</span>89</span></div>
-<div class="service-item">قص شعر <span class="price"><span class="sar">﷼</span>49</span></div>
-<div class="service-item">قص أطراف <span class="price"><span class="sar">﷼</span>29</span></div>
-<div class="service-item">قص غره <span class="price"><span class="sar">﷼</span>35</span></div>
-<div class="service-item">استشوار عادي <span class="price"><span class="sar">﷼</span>60 - 100</span></div>
-<div class="service-item">استشوار ويفي <span class="price"><span class="sar">﷼</span>100 - 150</span></div>
-<div class="service-item">فير للشعر <span class="price"><span class="sar">﷼</span>100 - 150</span></div>
-<div class="service-item">تقشير فروة <span class="price"><span class="sar">﷼</span>189</span></div>
-<div class="service-item">معالج الكهرمان <span class="price"><span class="sar">﷼</span>990 - 1490</span></div>
-<div class="service-item">معالج بيبي كريم <span class="price"><span class="sar">﷼</span>990 - 1490</span></div>
-<div class="service-item">معالج بارد <span class="price"><span class="sar">﷼</span>249 - 349</span></div>
-<div class="service-item">صبغة هايلايت <span class="price"><span class="sar">﷼</span>569</span></div>
-<div class="service-item">صبغة لون واحد <span class="price"><span class="sar">﷼</span>289</span></div>
-<div class="service-item">رنساج الشعر <span class="price"><span class="sar">﷼</span>175</span></div>
-<div class="service-item">كونتور غره <span class="price"><span class="sar">﷼</span>145</span></div>
-<div class="service-item">صبغة جذور <span class="price"><span class="sar">﷼</span>145</span></div>
+<div class="service-item"><span>غسيل الشعر</span> <span><span class="sar">﷼</span>25</span></div>
+<div class="service-item"><span>غسيل الشعر + ماسك عميق</span> <span><span class="sar">﷼</span>89</span></div>
+<div class="service-item"><span>قص شعر</span> <span><span class="sar">﷼</span>49</span></div>
+<div class="service-item"><span>قص أطراف</span> <span><span class="sar">﷼</span>29</span></div>
+<div class="service-item"><span>قص غرة</span> <span><span class="sar">﷼</span>35</span></div>
+<div class="service-item"><span>استشوار عادي</span> <span><span class="sar">﷼</span>60 - 100</span></div>
+<div class="service-item"><span>استشوار ويفي</span> <span><span class="sar">﷼</span>100 - 150</span></div>
+<div class="service-item"><span>فير للشعر</span> <span><span class="sar">﷼</span>100 - 150</span></div>
+<div class="service-item"><span>تقشير فروة</span> <span><span class="sar">﷼</span>189</span></div>
+<div class="service-item"><span>معالج الكهرمان</span> <span><span class="sar">﷼</span>990 - 1490</span></div>
+<div class="service-item"><span>معالج بيبي كريم</span> <span><span class="sar">﷼</span>990 - 1490</span></div>
+<div class="service-item"><span>معالج بارد</span> <span><span class="sar">﷼</span>249 - 349</span></div>
+<div class="service-item"><span>صبغة هايلايت</span> <span><span class="sar">﷼</span>569</span></div>
+<div class="service-item"><span>صبغة لون واحد</span> <span><span class="sar">﷼</span>289</span></div>
+<div class="service-item"><span>رنساج الشعر</span> <span><span class="sar">﷼</span>175</span></div>
+<div class="service-item"><span>كونتور غرة</span> <span><span class="sar">﷼</span>145</span></div>
+<div class="service-item"><span>صبغة جذور</span> <span><span class="sar">﷼</span>145</span></div>
+
 
 <!-- الرموش والحواجب -->
-<div class="section-title">الرموش و الحواجب</div>
+<div class="section-title">الرموش والحواجب</div>
 
-<div class="service-item">تشقير حواجب <span class="price"><span class="sar">﷼</span>35</span></div>
-<div class="service-item">صبغة حواجب <span class="price"><span class="sar">﷼</span>35</span></div>
-<div class="service-item">تشقير + صبغة <span class="price"><span class="sar">﷼</span>69</span></div>
-<div class="service-item">رفع رموش <span class="price"><span class="sar">﷼</span>249</span></div>
-<div class="service-item">رفع حواجب <span class="price"><span class="sar">﷼</span>249</span></div>
-<div class="service-item">رفع رموش + حواجب <span class="price"><span class="sar">﷼</span>449</span></div>
-<div class="service-item">رموش شهرية كلاسيك <span class="price"><span class="sar">﷼</span>298</span></div>
-<div class="service-item">رموش شهرية فوليوم <span class="price"><span class="sar">﷼</span>345</span></div>
-<div class="service-item">رموش أسبوعية <span class="price"><span class="sar">﷼</span>198</span></div>
-<div class="service-item">ريفيل رموش <span class="price"><span class="sar">﷼</span>130</span></div>
-<div class="service-item">إزالة رموش <span class="price"><span class="sar">﷼</span>50</span></div>
-<div class="service-item">شمع شارب <span class="price"><span class="sar">﷼</span>25</span></div>
-<div class="service-item">شمع حواجب <span class="price"><span class="sar">﷼</span>40</span></div>
-<div class="service-item">شمع رقبة <span class="price"><span class="sar">﷼</span>35</span></div>
-<div class="service-item">شمع وجه <span class="price"><span class="sar">﷼</span>57</span></div>
+<div class="service-item"><span>تشقير حواجب</span> <span><span class="sar">﷼</span>35</span></div>
+<div class="service-item"><span>صبغة حواجب</span> <span><span class="sar">﷼</span>35</span></div>
+<div class="service-item"><span>تشقير + صبغة</span> <span><span class="sar">﷼</span>69</span></div>
+<div class="service-item"><span>رفع رموش</span> <span><span class="sar">﷼</span>249</span></div>
+<div class="service-item"><span>رفع حواجب</span> <span><span class="sar">﷼</span>249</span></div>
+<div class="service-item"><span>رفع رموش + حواجب</span> <span><span class="sar">﷼</span>449</span></div>
+<div class="service-item"><span>رموش شهرية كلاسيك</span> <span><span class="sar">﷼</span>298</span></div>
+<div class="service-item"><span>رموش شهرية فوليوم</span> <span><span class="sar">﷼</span>345</span></div>
+<div class="service-item"><span>رموش أسبوعية</span> <span><span class="sar">﷼</span>198</span></div>
+<div class="service-item"><span>ريفيل رموش</span> <span><span class="sar">﷼</span>130</span></div>
+<div class="service-item"><span>إزالة رموش</span> <span><span class="sar">﷼</span>50</span></div>
+<div class="service-item"><span>شمع شارب</span> <span><span class="sar">﷼</span>25</span></div>
+<div class="service-item"><span>شمع حواجب</span> <span><span class="sar">﷼</span>40</span></div>
+<div class="service-item"><span>شمع رقبة</span> <span><span class="sar">﷼</span>35</span></div>
+<div class="service-item"><span>شمع وجه</span> <span><span class="sar">﷼</span>57</span></div>
 
- <div class="back-btn">
-    <a href="index.html" class="back-btn-link">العودة للرئيسية</a>
 </div>
 
- 
+<!-- زر الرجوع -->
+<div class="back-btn">
+    <a href="index.html">العودة للرئيسية</a>
+</div>
+
 </body>
 </html>
