@@ -211,3 +211,12 @@ body::before{
     text-align: center !important;
     line-height: normal !important;
 }
+/* تصغير بوكس زر قائمة الخدمات بالكامل */
+.services-btn {
+    display: inline-block !important;
+    padding: 6px 14px !important;   /* قلل البادينغ */
+    min-width: 140px !important;    /* عرض أصغر */
+    height: auto !important;
+    font-size: 20px !important;     /* حجم الخط */
+    border-radius: 12px !important; /* تدوير أقل */
+}
