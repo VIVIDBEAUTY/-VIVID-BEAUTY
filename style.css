@@ -108,8 +108,9 @@ body * {
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 55%;
-    opacity: 0.08;
+    width: 70%;              /* عشان يصير أكبر بالخلفية */
+    opacity: 0.06;           /* شفافية مناسبة للخلفية */
     transform: translate(-50%, -50%);
-    z-index: 0;
+    z-index: -1;             /* أهم شيء — يخليه خلف كل شيء */
+    pointer-events: none;    /* يمنع أي تداخل مع الضغط */
 }
