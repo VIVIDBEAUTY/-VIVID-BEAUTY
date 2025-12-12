@@ -1,5 +1,5 @@
-/* ================================
-        إعدادات عامة
+/* ===============================
+      إعدادات الصفحة العامة
 ================================ */
 body{
     margin:0;
@@ -7,17 +7,10 @@ body{
     direction:rtl;
     background:#2b2722;
     overflow-x:hidden;
-    -webkit-tap-highlight-color: transparent;
 }
 
-/* منع تحول الأرقام إلى أزرق */
-a, a:visited, a:active {
-    color: inherit !important;
-    text-decoration: none !important;
-}
-
-/* ================================
-        خلفية سلايد شو
+/* ===============================
+      خلفية السلايد شو
 ================================ */
 .slideshow img{
     position:fixed;
@@ -42,116 +35,125 @@ a, a:visited, a:active {
     100%{opacity:0;}
 }
 
-/* ================================
-       طبقة تغميق خلفية
+/* ===============================
+      طبقة التغميق الخفيفة
 ================================ */
 .dark-layer{
     position:fixed;
     top:0; left:0;
     width:100%; height:100%;
     background:rgba(0,0,0,0.55);
-    backdrop-filter:blur(5px);
+    backdrop-filter:blur(4px);
     z-index:-2;
 }
 
-/* ================================
-       صندوق الخدمات
+/* ===============================
+      صندوق الخدمات
 ================================ */
 .services-box{
-    position:relative;
-    z-index:10;
-
     width:92%;
     max-width:800px;
-    margin:35px auto;
-    padding:30px 22px;
-
-    background:rgba(255,255,255,0.70); /* شفافية محسّنة */
-    backdrop-filter:blur(12px); 
-    -webkit-backdrop-filter:blur(12px);
-
-    border-radius:22px;
+    margin:40px auto;
+    background:rgba(255,255,255,0.82);
+    border-radius:25px;
+    padding:30px 20px;
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
     box-shadow:0 8px 25px rgba(0,0,0,0.30);
     border:1px solid rgba(255,255,255,0.18);
-    text-align:center;
+    position:relative;
+    z-index:5;
 }
 
-/* ================================
-        عنوان الصفحة
+/* ===============================
+      العنوان الرئيسي
 ================================ */
 .top-title{
-    font-size:30px;
+    text-align:center;
+    font-size:28px;
     font-weight:700;
     color:#d9c7a5;
-    margin-bottom:3px;
+    margin-bottom:5px;
 }
-
 .top-sub{
-    font-size:19px;
-    color:#e6d8c1;
-    opacity:.9;
+    text-align:center;
+    font-size:18px;
     margin-bottom:25px;
+    color:#d9c7a5;
+    opacity:0.9;
 }
 
-/* ================================
-       عناوين الأقسام
+/* ===============================
+      عنوان القسم الممتد الجميل
 ================================ */
-
-/* العناوين القصيرة الممتدة */
 .section-head{
-    font-size:25px;
-    font-weight:600;
+    font-size:24px;
+    font-weight:700;
     color:#d9c7a5;
     text-align:center;
-    margin:38px 0 18px;
-    letter-spacing:8px;
+    margin:40px 0 25px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
 }
 
-/* العناوين الطويلة العادية */
-.section-head.long{
-    letter-spacing:2px !important;
+/* الخطوط الممتدة يمين ويسار العنوان */
+.section-head::before,
+.section-head::after{
+    content:"";
+    flex:1;
+    height:1.2px;
+    background:#d9c7a587;
+    margin:0 10px;
 }
 
-/* ================================
-         العناصر
+/* ===============================
+      العناوين الفرعية
+================================ */
+.section-sub{
+    font-size:20px;
+    font-weight:600;
+    margin:20px 0 10px;
+    color:#6e5a44;
+    text-align:right;
+}
+
+/* ===============================
+      عنصر الخدمة
 ================================ */
 .item{
     display:flex;
     justify-content:space-between;
-    padding:13px 0;
-    border-bottom:1px solid #ccbba9;
-    font-size:19px;
-    color:#D9C7A5;
+    border-bottom:1px solid #c9b8a5;
+    padding:12px 0;
+    font-size:18px;
+    color:#2b2722;
 }
 
 .price{
     display:flex;
     align-items:center;
     gap:6px;
-    color:#D9C7A5;
 }
-
 .price img{
-    width:17px;
-    opacity:0.9;
+    width:16px;
 }
 
-/* ================================
-        زر العودة
+/* ===============================
+      زر العودة
 ================================ */
 .back-btn{
     display:block;
     width:fit-content;
-    margin:35px auto 5px;
     padding:14px 26px;
     background:#d7c3a5;
-    color:#000;
-    border-radius:10px;
-    font-size:20px;
-    font-weight:700;
+    color:black;
+    font-weight:600;
     text-decoration:none;
+    border-radius:10px;
+    margin:40px auto 10px;
 }
-
 .back-btn:hover{
     background:#c7b295;
 }
