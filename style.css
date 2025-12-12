@@ -144,7 +144,7 @@ body::before{
     margin:10px auto 25px;
     padding:14px 26px;
     background:#D9C7A5;
-    color:#2b2722;
+    color: #000 !important;
     font-size:22px;
     font-weight:700;
     border-radius:12px;
