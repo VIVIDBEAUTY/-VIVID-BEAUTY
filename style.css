@@ -152,6 +152,8 @@ body::before{
     margin: 20px auto;
     transition: 0.25s;
     width: auto;         /* ⬅️ يخلي العرض صغير حسب النص */
+    position: relative !important;
+    z-index: 9999 !important;
 }
 
 /* عند اللمس */
@@ -160,13 +162,6 @@ body::before{
     background:#e8d9be;
 }
 
-/* للجوال */
-@media (max-width: 600px) {
-    .services-btn {
-        font-size: 16px;
-        padding: 5px 10px;
-    }
-}
 /* للجوال */
 @media (max-width: 600px) {
     .services-btn {
