@@ -1,142 +1,100 @@
 body{
     margin:0;
+    padding:0;
+    background:#ffffff;
     font-family:"Cairo",sans-serif;
-    background:#2b2722;
-    overflow-x:hidden;
+    direction:rtl;
+    color:#444;
 }
 
-/* خلفية */
-.slideshow img{
-    position:fixed;
-    top:0;left:0;
-    width:100%;height:100%;
-    object-fit:cover;
-    opacity:0;
-    animation:slide 18s infinite;
-    filter:grayscale(75%);
-    z-index:-3;
-}
-.slideshow img:nth-child(1){animation-delay:0s;}
-.slideshow img:nth-child(2){animation-delay:6s;}
-.slideshow img:nth-child(3){animation-delay:12s;}
-
-@keyframes slide{
-    0%{opacity:0;}
-    12%{opacity:0.30;}
-    30%{opacity:0.30;}
-    45%{opacity:0;}
-    100%{opacity:0;}
-}
-
-/* طبقة تغميق */
-.dark-layer{
-    position:fixed;
-    top:0;left:0;
-    width:100%;height:100%;
-    background:rgba(0,0,0,0.50);
-    backdrop-filter:blur(4px);
-    z-index:-2;
-}
-
-/* صندوق الخدمات */
-.services-box{
+/* الحاوية العامة */
+.page-container{
     width:92%;
-    max-width:820px;
-    margin:35px auto;
-    background:rgba(255,255,255,0.78);
-    backdrop-filter:blur(12px);
-    border-radius:22px;
-    padding:32px 25px;
-    box-shadow:0 0 25px rgba(0,0,0,0.35);
-    position:relative;
-    z-index:5;
+    max-width:850px;
+    margin:25px auto 50px;
 }
 
-/* العنوان */
-.top-title{
+/* عنوان رئيسي */
+.main-title{
     text-align:center;
     font-size:32px;
-    color:#d9c7a5;
     font-weight:700;
-    margin-bottom:6px;
+    color:#b79d7e;
+    margin-bottom:5px;
 }
-.top-sub{
+
+/* عنوان فرعي */
+.sub-title{
     text-align:center;
-    font-size:18px;
-    color:#d9c7a5;
-    margin-bottom:28px;
-}
-
-/* عناوين الأقسام — زخرفة يمين ويسار */
-.section-head{
-    font-size:24px;
-    font-weight:600;
-    color:#d9c7a5;
-    text-align:center;
-    margin:45px 0 25px;
-    position:relative;
-}
-
-.section-head:before,
-.section-head:after{
-    content:"ــــــــــــــــــــ";
-    color:#d9c7a5;
-    font-size:18px;
-    font-weight:300;
-    position:absolute;
-    top:50%;
-    transform:translateY(-50%);
-}
-
-.section-head:before{
-    right:100%;
-    margin-right:6px;
-}
-
-.section-head:after{
-    left:100%;
-    margin-left:6px;
-}
-
-/* عناوين فرعية */
-.section-sub{
     font-size:20px;
+    color:#b79d7e;
+    margin-bottom:35px;
     font-weight:600;
-    color:#6e5a44;
-    margin:20px 0 10px;
-    text-align:right;
+}
+
+/* صندوق القسم */
+.section{
+    background:white;
+    border:1px solid #e4d6c8;
+    border-radius:14px;
+    padding:20px 18px;
+    margin-bottom:30px;
+}
+
+/* عنوان القسم */
+.section-title{
+    text-align:center;
+    font-size:24px;
+    font-weight:700;
+    color:#b79d7e;
+    margin-bottom:15px;
+}
+
+/* عنوان فرعي داخل القسم */
+.sub-head{
+    font-size:19px;
+    font-weight:600;
+    color:#8a715a;
+    margin:18px 0 10px;
 }
 
 /* عنصر الخدمة */
 .item{
     display:flex;
     justify-content:space-between;
-    border-bottom:1px solid #c9b8a5;
-    padding:12px 0;
-    font-size:18px;
-    color:#1d1b19;
+    padding:10px 0;
+    border-bottom:1px solid #eee;
+    font-size:17px;
+    color:#3b352f;
 }
 
-.item .price{
+.item:last-child{
+    border-bottom:none;
+}
+
+/* السعر */
+.price{
+    color:#3b352f;
     display:flex;
     align-items:center;
-    gap:6px;
-    color:#1d1b19;
+    gap:5px;
 }
-.item .price img{
-    width:17px;
+
+.price img{
+    width:16px;
+    height:16px;
 }
 
 /* زر العودة */
 .back-btn{
     display:block;
     width:fit-content;
-    margin:40px auto 0;
-    background:#d7c3a5;
-    color:#000;
-    padding:12px 26px;
+    margin:40px auto;
+    padding:12px 28px;
     border-radius:10px;
-    text-decoration:none;
+    background:#b79d7e;
+    color:white;
     font-size:18px;
+    text-decoration:none;
     font-weight:600;
 }
