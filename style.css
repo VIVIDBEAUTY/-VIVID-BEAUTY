@@ -200,3 +200,14 @@ body::before{
     justify-content: center !important;
     align-items: center !important;
 }
+/* تصغير زر قائمة الخدمات إجباري */
+.services-btn {
+    display: inline-block !important;
+    width: 180px !important;         /* العرض */
+    height: 55px !important;         /* الارتفاع */
+    padding: 10px 10px !important;   /* الحشوة الداخلية */
+    font-size: 22px !important;      /* حجم الخط */
+    border-radius: 14px !important;
+    text-align: center !important;
+    line-height: normal !important;
+}
