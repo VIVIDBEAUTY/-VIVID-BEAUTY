@@ -137,3 +137,11 @@ body {
 .back-btn:hover {
     background: #c7b295;
 }
+/* رمز الريال داخل قائمة الأسعار */
+.price img {
+    width: 18px;
+    height: auto;
+    margin-left: 6px;
+    opacity: 0.9;
+    vertical-align: middle;
+}
