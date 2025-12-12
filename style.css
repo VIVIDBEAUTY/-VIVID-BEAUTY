@@ -1,21 +1,20 @@
-/* خلفية الموقع + الخلفيات المتبدلة */
+/* ------------------------------------------- */
+/*        الخلفية + الخلفيات المتبدلة         */
+/* ------------------------------------------- */
 body {
     margin: 0;
     direction: rtl;
     font-family: "Cairo", sans-serif !important;
-    
-    background: #f7f3ef;
-    animation: bgSlide 18s infinite;
-body {
-    background-attachment: fixed;
-    background-position: center center; 
+
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; /* أفضل خيار لجمالية الخلفيات */
+    background-attachment: fixed;
+
     animation: bgSlide 15s infinite ease-in-out;
 }
-    background-attachment: fixed;
-}
 
+/* حركة تغيير الخلفيات */
 @keyframes bgSlide {
     0%   { background-image: url("bg1.jpg"); }
     33%  { background-image: url("bg2.jpg"); }
@@ -23,7 +22,9 @@ body {
     100% { background-image: url("bg1.jpg"); }
 }
 
-/* طبقة السواد الشفافة فوق الخلفية */
+/* ------------------------------------------- */
+/*       طبقة السواد فوق الخلفية (Overlay)     */
+/* ------------------------------------------- */
 .dark-overlay {
     position: fixed;
     top: 0;
@@ -32,72 +33,95 @@ body {
     height: 100%;
     background: rgba(0,0,0,0.45);
     backdrop-filter: blur(1.5px);
-    z-index: -2;   /* أقل من اللوقو الكبير */
+    z-index: -2; /* لازم يكون خلف اللوقو & المحتوى */
 }
+
+/* رفع كل محتوى الصفحة فوق الخلفية تماما */
 body * {
     position: relative;
     z-index: 1;
 }
 
-
-/* رفع المحتوى فوق الخلفية + فوق الطبقة */
-body * {
-    position: relative;
-    z-index: 1;
+/* ------------------------------------------- */
+/*              اللوقو الخلفي الكبير           */
+/* ------------------------------------------- */
+.big-bg-logo {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45%;      /* مقاس مثالي - يمكن تكبيره */
+    opacity: 0.10;   /* شفافية خفيفة وجميلة */
+    z-index: -1;     /* خلف الأيقونات */
+    pointer-events: none;
 }
 
-/* الحاوية الأساسية */
+/* ------------------------------------------- */
+/*             الحاوية الأساسية                */
+/* ------------------------------------------- */
 .container {
     width: 92%;
     max-width: 900px;
     margin: 40px auto;
-    background: #ffffff;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(5px);
     padding: 25px;
     border-radius: 14px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.12);
 }
 
-/* عنوان الصفحة */
+/* ------------------------------------------- */
+/*             عنوان الصفحة                     */
+/* ------------------------------------------- */
 .page-title {
     text-align: center;
     font-size: 26px;
     margin-bottom: 25px;
-    color: #6e5a44;
+    color: #c7b79a; /* لون مطابق للّوقو */
     font-weight: bold;
 }
 
-/* عناوين الأقسام */
+/* ------------------------------------------- */
+/*           عناوين الأقسام                     */
+/* ------------------------------------------- */
 .section-title {
     margin-top: 40px;
     margin-bottom: 15px;
     font-size: 20px;
     font-weight: bold;
-    color: #7a6752;
-    border-right: 5px solid #b8a491;
+    color: #c7b79a;
+    border-right: 5px solid #e3d6bf;
     padding-right: 10px;
 }
 
-/* عنصر الخدمة */
+/* ------------------------------------------- */
+/*              عنصر الخدمة                     */
+/* ------------------------------------------- */
 .service-item {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
     font-size: 17px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+    color: white;
 }
 
-/* رمز الريال */
+/* ------------------------------------------- */
+/*            رمز الريال                        */
+/* ------------------------------------------- */
 .sar-icon {
     width: 16px;
     margin-left: 4px;
     vertical-align: middle;
 }
 
-/* زر العودة */
+/* ------------------------------------------- */
+/*                زر العودة                      */
+/* ------------------------------------------- */
 .back-btn {
     display: inline-block;
     padding: 10px 20px;
-    background: #7a6a50;
+    background: #c7b79a;
     color: white;
     border-radius: 8px;
     text-decoration: none;
@@ -106,33 +130,14 @@ body * {
 }
 
 .back-btn:hover {
-    background: #6a5a42;
+    background: #e3d6bf;
 }
 
-/* فاصل الأقسام */
+/* ------------------------------------------- */
+/*           فاصل الأقسام                      */
+/* ------------------------------------------- */
 .divider {
     height: 1px;
-    background: #c8b7a3;
+    background: rgba(255,255,255,0.3);
     margin: 25px 0;
-}
-.big-logo {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 70%;              /* عشان يصير أكبر بالخلفية */
-    opacity: 0.06;           /* شفافية مناسبة للخلفية */
-    transform: translate(-50%, -50%);
-    z-index: -1;             /* أهم شيء — يخليه خلف كل شيء */
-    pointer-events: none;    /* يمنع أي تداخل مع الضغط */
-}
-/* اللوقو الخلفي الثابت */
-.big-bg-logo {
-    position: absolute;
-    top: 8%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40%;
-    opacity: 0.12; /* شفافية ممتازة للخلفية */
-    z-index: -1;   /* أهم شيء — يخليه خلف الأيقونات */
-    pointer-events: none; /* يمنع التداخل مع الضغط */
 }
