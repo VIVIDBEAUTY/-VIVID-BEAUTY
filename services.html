@@ -8,10 +8,9 @@
 <title>قائمة الخدمات | VIVID BEAUTY</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="services.css">
 
 <style>
-/* خلفية الصفحة من السلايد شو الرئيسي */
+/* خلفية من الصفحة الرئيسية */
 .slideshow img{
     position:fixed;
     top:0;left:0;
@@ -31,9 +30,18 @@
 .slideshow img:nth-child(1){animation-delay:0s;}
 .slideshow img:nth-child(2){animation-delay:6s;}
 .slideshow img:nth-child(3){animation-delay:12s;}
+
+/* طبقة تغميق */
+.dark-layer{
+    position:fixed;
+    top:0;left:0;
+    width:100%;height:100%;
+    background:rgba(0,0,0,0.55);
+    backdrop-filter:blur(4px);
+    z-index:-2;
 }
 
-/* صندوق المحتوى */
+/* الصندوق */
 .services-box{
     width:92%;
     max-width:800px;
@@ -45,13 +53,12 @@
     box-shadow:0 0 25px rgba(0,0,0,0.25);
 }
 
-/* العنوان الرئيسي */
+/* العنوان */
 .top-title{
     text-align:center;
     font-size:28px;
     font-weight:700;
     color:#d9c7a5;
-    margin-bottom:5px;
 }
 .top-sub{
     text-align:center;
@@ -60,17 +67,17 @@
     color:#d9c7a5;
 }
 
-/* عنوان القسم الممتد */
+/* العنوان الممتد */
 .section-head{
     font-size:26px;
     font-weight:700;
     color:#d9c7a5;
     text-align:center;
     margin:40px 0 15px;
-    letter-spacing:6px;
+    letter-spacing:4px;
 }
 
-/* فرعي */
+/* عناوين فرعية */
 .section-sub{
     font-size:21px;
     font-weight:600;
@@ -79,7 +86,7 @@
     text-align:right;
 }
 
-/* عنصر الخدمة */
+/* عنصر خدمة */
 .item{
     display:flex;
     justify-content:space-between;
@@ -121,12 +128,12 @@
 
 <body>
 
+<!-- خلفية -->
 <div class="slideshow">
     <img src="bg1.jpg">
     <img src="bg2.jpg">
     <img src="bg3.jpg">
 </div>
-
 <div class="dark-layer"></div>
 
 <div class="services-box">
@@ -135,8 +142,7 @@
     <div class="top-sub">قائمة الخدمات</div>
 
     <!-- الأظافر -->
-    <div class="section-head">الأظــــــافـــــــر
-</div>
+    <div class="section-head">الأظــــــــــــــــــــــافــــــــــــــــــــــر</div>
 
     <div class="item"><span>مونكير عناية بالأيدي سيقنتشر</span><span class="price">94 <img src="sar.png"></span></div>
     <div class="item"><span>بوديكير عناية بالأرجل سيقنتشر</span><span class="price">99 <img src="sar.png"></span></div>
@@ -153,9 +159,8 @@
     <div class="item"><span>أومبري لون عادي</span><span class="price">45 <img src="sar.png"></span></div>
     <div class="item"><span>كروم لون عادي</span><span class="price">20 <img src="sar.png"></span></div>
 
-
     <!-- الجل -->
-    <div class="section-head">الجل</div>
+    <div class="section-head">الـــــــــــــــــــــــجـــــــــــــــــــــــل</div>
 
     <div class="section-sub">ألوان الجل</div>
 
@@ -186,9 +191,8 @@
     <div class="item"><span>كات اي</span><span class="price">60 <img src="sar.png"></span></div>
     <div class="item"><span>كروم</span><span class="price">20 <img src="sar.png"></span></div>
 
-
     <!-- الشعر -->
-    <div class="section-head">الشعر</div>
+    <div class="section-head">الــــــــــــــــــــــــــــشــــــــــــــــــــــــــــعــــــــــــــــــــــــــــر</div>
 
     <div class="item"><span>غسيل الشعر</span><span class="price">25 <img src="sar.png"></span></div>
     <div class="item"><span>غسيل الشعر + ماسك عناية عميق</span><span class="price">89 <img src="sar.png"></span></div>
@@ -212,9 +216,8 @@
     <div class="item"><span>كونتور غرة</span><span class="price">145 <img src="sar.png"></span></div>
     <div class="item"><span>صبغة جذور</span><span class="price">145 <img src="sar.png"></span></div>
 
-
     <!-- الرموش والحواجب -->
-    <div class="section-head">الرموش و الحواجب</div>
+    <div class="section-head">الرمــــــــــــــــــــــــــــــــــــــــوش و الحواجــــــــــــــــــــــــــــــــــــــــب</div>
 
     <div class="item"><span>تشقير حواجب</span><span class="price">35 <img src="sar.png"></span></div>
     <div class="item"><span>صبغة حواجب</span><span class="price">35 <img src="sar.png"></span></div>
