@@ -8,130 +8,12 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="services.css">
-<link rel="stylesheet" href="style.css">
-
-<style>
-/* خلفيات الصفحة */
-.slideshow img{
-    position:fixed;
-    top:0;left:0;
-    width:100%;height:100%;
-    object-fit:cover;
-    opacity:0;
-    animation:slide 18s infinite;
-    z-index:-3;
-}
-@keyframes slide{
-    0%{opacity:0;}
-    12%{opacity:0.28;}
-    30%{opacity:0.28;}
-    45%{opacity:0;}
-    100%{opacity:0;}
-}
-.slideshow img:nth-child(1){animation-delay:0s;}
-.slideshow img:nth-child(2){animation-delay:6s;}
-.slideshow img:nth-child(3){animation-delay:12s;}
-
-.dark-layer{
-    position:fixed;
-    top:0;left:0;
-    width:100%;height:100%;
-    background:rgba(0,0,0,0.55);
-    backdrop-filter:blur(4px);
-    z-index:-2;
-}
-
-/* صندوق المحتوى */
-.services-box{
-    width:92%;
-    max-width:800px;
-    margin:40px auto;
-    background:rgba(255,255,255,0.82);
-    border-radius:22px;
-    padding:30px;
-    backdrop-filter:blur(12px);
-    -webkit-backdrop-filter:blur(12px);
-    box-shadow:0 0 25px rgba(0,0,0,0.25);
-}
-
-/* العناوين */
-.top-title{
-    text-align:center;
-    font-size:30px;
-    font-weight:700;
-    color:#d9c7a5;
-    margin-bottom:5px;
-}
-.top-sub{
-    text-align:center;
-    font-size:20px;
-    margin-bottom:25px;
-    color:#d9c7a5;
-}
-
-/* العنوان الكبير الممتد */
-.section-head{
-    font-size:26px;
-    font-weight:700;
-    color:#d9c7a5;
-    text-align:center;
-    margin:40px 0 20px;
-    letter-spacing:10px;
-}
-
-/* عنوان فرعي ممتد قليلاً */
-.section-sub{
-    font-size:21px;
-    font-weight:600;
-    margin:20px 0 10px;
-    color:#6e5a44;
-    text-align:center;
-    letter-spacing:5px;
-}
-
-/* عنصر الخدمة */
-.item{
-    display:flex;
-    justify-content:space-between;
-    border-bottom:1px solid #c9b8a5;
-    padding:12px 0;
-    font-size:18px;
-    color:#2b2722;
-}
-
-/* السعر */
-.price{
-    display:flex;
-    align-items:center;
-    gap:6px;
-    color:#2b2722;
-}
-.price img{
-    width:17px;
-}
-
-/* زر العودة */
-.back-btn{
-    display:block;
-    width:fit-content;
-    margin:35px auto 10px;
-    padding:12px 26px;
-    background:#d7c3a5;
-    color:#000;
-    border-radius:10px;
-    font-size:20px;
-    font-weight:700;
-    text-decoration:none;
-}
-.back-btn:hover{
-    background:#c7b295;
-}
-</style>
 
 </head>
 
 <body>
 
+<!-- خلفية السلايد شو -->
 <div class="slideshow">
     <img src="bg1.jpg">
     <img src="bg2.jpg">
@@ -140,22 +22,21 @@
 
 <div class="dark-layer"></div>
 
+<!-- الصندوق -->
 <div class="services-box">
 
     <div class="top-title">VIVID BEAUTY</div>
     <div class="top-sub">قائمة الخدمات</div>
 
     <!-- الأظافر -->
-    <div class="section-head">الـــــأظــــــافــــــر</div>
+    <div class="section-head">الأظافر</div>
 
     <div class="item"><span>مونكير عناية بالأيدي سيقنتشر</span><span class="price">94 <img src="sar.png"></span></div>
     <div class="item"><span>بوديكير عناية بالأرجل سيقنتشر</span><span class="price">99 <img src="sar.png"></span></div>
     <div class="item"><span>مونكير عناية بالأيدي كلاسك</span><span class="price">79 <img src="sar.png"></span></div>
     <div class="item"><span>بوديكير عناية بالأرجل كلاسك</span><span class="price">84 <img src="sar.png"></span></div>
-
     <div class="item"><span>تنظيف روسي كلاسك</span><span class="price">99 <img src="sar.png"></span></div>
     <div class="item"><span>تنظيف روسي سيقنتشر</span><span class="price">149 <img src="sar.png"></span></div>
-
     <div class="item"><span>تركيب أظافر عادي مع لون</span><span class="price">70 <img src="sar.png"></span></div>
     <div class="item"><span>لون مناكير</span><span class="price">16 <img src="sar.png"></span></div>
     <div class="item"><span>آرت الظفر الواحد</span><span class="price">9–15 <img src="sar.png"></span></div>
@@ -163,11 +44,10 @@
     <div class="item"><span>أومبري لون عادي</span><span class="price">45 <img src="sar.png"></span></div>
     <div class="item"><span>كروم لون عادي</span><span class="price">20 <img src="sar.png"></span></div>
 
-
     <!-- الجل -->
-    <div class="section-head">الـــــجـــــــل</div>
+    <div class="section-head">الجل</div>
 
-    <div class="section-sub">ألــــوان الــــجــــل</div>
+    <div class="section-sub">ألوان الجل</div>
 
     <div class="item"><span>لون جل ساده</span><span class="price">75 <img src="sar.png"></span></div>
     <div class="item"><span>كات اي</span><span class="price">80 <img src="sar.png"></span></div>
@@ -176,64 +56,55 @@
     <div class="item"><span>آرت جل للظفر الواحد</span><span class="price">14–20 <img src="sar.png"></span></div>
     <div class="item"><span>إزالة لون جل</span><span class="price">55 <img src="sar.png"></span></div>
 
-    <div class="section-sub">الــجـــل الأكــســتــنــشــن</div>
+    <div class="section-sub">الجل اكستنشن</div>
 
     <div class="item"><span>جل اكستنشن</span><span class="price">370 <img src="sar.png"></span></div>
     <div class="item"><span>ريفيل جل اكستنشن</span><span class="price">190 <img src="sar.png"></span></div>
     <div class="item"><span>جل إكس</span><span class="price">140 <img src="sar.png"></span></div>
     <div class="item"><span>إصلاح أو تركيب ظفر واحد</span><span class="price">30 <img src="sar.png"></span></div>
     <div class="item"><span>إزالة جل اكستنشن</span><span class="price">120 <img src="sar.png"></span></div>
-
     <div class="item"><span>بياب</span><span class="price">180 <img src="sar.png"></span></div>
     <div class="item"><span>ريفيل بياب</span><span class="price">120 <img src="sar.png"></span></div>
     <div class="item"><span>إصلاح ظفر بياب واحد</span><span class="price">20 <img src="sar.png"></span></div>
     <div class="item"><span>إزالة بياب</span><span class="price">55 <img src="sar.png"></span></div>
 
-    <div class="section-sub">إضــــافــــات الــــجــــل والــــبــيـــاب</div>
+    <div class="section-sub">إضافات الجل والبياب</div>
 
     <div class="item"><span>فرنش</span><span class="price">60 <img src="sar.png"></span></div>
     <div class="item"><span>أومبري</span><span class="price">60 <img src="sar.png"></span></div>
     <div class="item"><span>كات اي</span><span class="price">60 <img src="sar.png"></span></div>
     <div class="item"><span>كروم</span><span class="price">20 <img src="sar.png"></span></div>
 
-
     <!-- الشعر -->
-    <div class="section-head">الـــــشــــــــعــــــر</div>
+    <div class="section-head">الشعر</div>
 
     <div class="item"><span>غسيل الشعر</span><span class="price">25 <img src="sar.png"></span></div>
     <div class="item"><span>غسيل الشعر + ماسك عناية عميق</span><span class="price">89 <img src="sar.png"></span></div>
-
     <div class="item"><span>قص شعر</span><span class="price">49 <img src="sar.png"></span></div>
     <div class="item"><span>قص أطراف</span><span class="price">29 <img src="sar.png"></span></div>
     <div class="item"><span>قص غرة</span><span class="price">35 <img src="sar.png"></span></div>
-
     <div class="item"><span>استشوار عادي</span><span class="price">60–100 <img src="sar.png"></span></div>
     <div class="item"><span>استشوار ويفي</span><span class="price">100–150 <img src="sar.png"></span></div>
     <div class="item"><span>فير للشعر</span><span class="price">100–150 <img src="sar.png"></span></div>
-
     <div class="item"><span>تقشير فروة</span><span class="price">189 <img src="sar.png"></span></div>
     <div class="item"><span>معالج الكهرمان</span><span class="price">990–1490 <img src="sar.png"></span></div>
     <div class="item"><span>معالج بيبي كريم</span><span class="price">990–1490 <img src="sar.png"></span></div>
     <div class="item"><span>معالج بارد</span><span class="price">249–349 <img src="sar.png"></span></div>
-
     <div class="item"><span>صبغة هايلايت</span><span class="price">569 <img src="sar.png"></span></div>
     <div class="item"><span>صبغة لون واحد</span><span class="price">289 <img src="sar.png"></span></div>
     <div class="item"><span>رنساج الشعر</span><span class="price">175 <img src="sar.png"></span></div>
     <div class="item"><span>كونتور غرة</span><span class="price">145 <img src="sar.png"></span></div>
     <div class="item"><span>صبغة جذور</span><span class="price">145 <img src="sar.png"></span></div>
 
-
     <!-- الرموش والحواجب -->
-    <div class="section-head">الــــرمــــــوش والـــــحــــــواجــــب</div>
+    <div class="section-head">الرموش و الحواجب</div>
 
     <div class="item"><span>تشقير حواجب</span><span class="price">35 <img src="sar.png"></span></div>
     <div class="item"><span>صبغة حواجب</span><span class="price">35 <img src="sar.png"></span></div>
     <div class="item"><span>تشقير + صبغة</span><span class="price">59 <img src="sar.png"></span></div>
-
     <div class="item"><span>رفع رموش</span><span class="price">249 <img src="sar.png"></span></div>
     <div class="item"><span>رفع حواجب</span><span class="price">249 <img src="sar.png"></span></div>
     <div class="item"><span>رفع رموش + حواجب</span><span class="price">449 <img src="sar.png"></span></div>
-
     <div class="item"><span>رموش شهرية كلاسيك</span><span class="price">298 <img src="sar.png"></span></div>
     <div class="item"><span>رموش شهرية فوليوم</span><span class="price">345 <img src="sar.png"></span></div>
     <div class="item"><span>رموش أسبوعية</span><span class="price">198 <img src="sar.png"></span></div>
