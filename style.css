@@ -29,19 +29,6 @@
     backdrop-filter:blur(3px);
 }
 
-/* حاوية المحتوى */
-.services-container{
-    position:relative;
-    z-index:10;
-    width:90%;
-    max-width:700px;
-    margin:40px auto;
-    background:rgba(255,255,255,0.12);
-    padding:25px;
-    border-radius:18px;
-    backdrop-filter:blur(6px);
-}
-
 /* العناوين */
 .page-title{
     text-align:center;
@@ -51,40 +38,11 @@
     font-weight:700;
 }
 
-.section-title{
-    font-size:22px;
-    color:#f4e8d2;
-    margin-top:30px;
-    margin-bottom:15px;
-    font-weight:600;
-}
-
 .section-title.sub{
     font-size:19px;
     opacity:0.9;
 }
 
-/* عنصر خدمة */
-.service-item{
-    display:flex;
-    justify-content:space-between;
-    padding:10px 0;
-    border-bottom:1px solid rgba(255,255,255,0.15);
-    color:#fff;
-    font-size:18px;
-}
-
-.price img{
-    width:17px;
-    margin-left:6px;
-    vertical-align:middle;
-}
-
-/* زر العودة */
-.back-center{
-    text-align:center;
-    margin-top:35px;
-}
 
 .back-btn{
     display:inline-block;
@@ -150,4 +108,69 @@
 /* إصلاح تداخل الخلفية الداكنة */
 .dark-layer, .dark-overlay {
     z-index: -1 !important;  
+}
+/* خلفية المحتوى (صندوق واضح للقراءة) */
+.services-container {
+    position: relative;
+    z-index: 10;
+    width: 92%;
+    max-width: 780px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.78); /* خلفية واضحة */
+    backdrop-filter: blur(8px);             /* تغبيش خلفي */
+    box-shadow: 0 0 30px rgba(0,0,0,0.35);
+}
+
+/* عنوان الصفحة */
+.page-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #6e5a44;
+    margin-bottom: 25px;
+}
+
+/* عنوان قسم */
+.section-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    color: #6e5a44;
+}
+
+/* تنسيق سطر الخدمة (يمين → يسار) */
+.service-item {
+    display: flex;
+    justify-content: space-between; /* الاسم يمين — السعر يسار */
+    padding: 12px 0;
+    border-bottom: 1px solid #ccbba9;
+    font-size: 20px;
+    color: #2b2722;
+}
+
+/* السعر */
+.price img {
+    width: 18px;
+    vertical-align: middle;
+    margin-left: 6px;
+}
+
+/* زر العودة */
+.back-btn {
+    display: inline-block;
+    margin: 40px auto 5px;
+    padding: 14px 26px;
+    background: #7a6a50;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.back-btn:hover {
+    background: #6a5a42;
 }
