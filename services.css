@@ -98,3 +98,8 @@ body{
     text-decoration:none;
     font-weight:600;
 }
+.services-box {
+    background: rgba(255, 245, 232, 0.80);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
