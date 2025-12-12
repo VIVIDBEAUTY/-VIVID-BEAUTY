@@ -138,23 +138,24 @@ body::before{
     z-index:5;
     position:relative;
 }
-.services-btn{
-    display:block;
-    width:180px;       /* 🔥 عرض صغير ومستطيل */
-    padding:10px 0;    /* 🔥 ارتفاع أصغر */
-    margin:20px auto;  /* 🔥 يبقى بالنص */
-    background:#D9C7A5;
-    color:#000 !important;
-    font-size:20px;    /* 🔥 حجم خط أصغر */
-    font-weight:700;
-    text-align:center;
-    border-radius:14px;
-    text-decoration:none;
-    transition:0.25s;
+.services-btn {
+    display: block;
+    width: 165px;           /* ⬅️ عرض صغير مناسب لسطر واحد */
+    padding: 10px 5px;      /* ⬅️ ارتفاع أصغر */
+    background: #D9C7A5;
+    color: #000 !important;
+    font-size: 14px;        /* ⬅️ خط صغير يناسب كلمة طويلة */
+    font-weight: 700;
+    text-align: center;
+    border-radius: 12px;
+    text-decoration: none;
+    margin: 25px auto;
+    white-space: nowrap;    /* ⬅️ يمنع النص من النزول لسطرين */
+    transition: 0.25s;
 }
 
-.services-btn:hover{
-    transform:scale(1.05);
+.services-btn:hover {
+    transform: scale(1.05);
 }
 /* للجوال */
 @media (max-width: 600px) {
