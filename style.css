@@ -140,17 +140,20 @@ body::before{
 }
 /* زر قائمة الخدمات */
 .services-btn{
-    display:block;
-    width:180px;            /* ← عرض المستطيل الصغير */
-    padding:10px 0;         /* ← ارتفاع صغير */
+    display:inline-block;
+    padding:8px 18px;          /* ← زر صغير */
     background:#D9C7A5;
     color:#000 !important;
-    font-size:18px;         /* ← خط مناسب وواضح */
-    font-weight:700;
-    text-align:center;
-    border-radius:10px;     /* ← زوايا ناعمة */
+    font-size:16px;            /* ← خط صغير مرتب */
+    font-weight:600;
+    border-radius:8px;         /* ← زوايا صغيرة ناعمة */
+    text-decoration:none;
     margin:20px auto;
     transition:0.25s;
+}
+
+.services-btn:hover{
+    transform:scale(1.05);
 }
 
 .services-btn:hover{
