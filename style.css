@@ -138,24 +138,34 @@ body::before{
     z-index:5;
     position:relative;
 }
+/* زر قائمة الخدمات */
 .services-btn {
-    display: block;
-    width: 165px;           /* ⬅️ عرض صغير مناسب لسطر واحد */
-    padding: 10px 5px;      /* ⬅️ ارتفاع أصغر */
+    display: inline-block;
+    padding: 6px 12px;
     background: #D9C7A5;
     color: #000 !important;
-    font-size: 14px;        /* ⬅️ خط صغير يناسب كلمة طويلة */
+    font-size: 18px;
     font-weight: 700;
-    text-align: center;
     border-radius: 12px;
     text-decoration: none;
-    margin: 25px auto;
-    white-space: nowrap;    /* ⬅️ يمنع النص من النزول لسطرين */
+    white-space: nowrap;
+    margin: 20px auto;
     transition: 0.25s;
+    width: auto;         /* ⬅️ يخلي العرض صغير حسب النص */
 }
 
+/* عند اللمس */
 .services-btn:hover {
     transform: scale(1.05);
+    background:#e8d9be;
+}
+
+/* للجوال */
+@media (max-width: 600px) {
+    .services-btn {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
 }
 /* للجوال */
 @media (max-width: 600px) {
@@ -188,35 +198,4 @@ body::before{
         transform: scale(1);
         opacity: 1;
     }
-}
-/* إجبار زر قائمة الخدمات على الحجم الصغير */
-.services-btn {
-    width: 160px !important;        /* عرض صغير */
-    height: 50px !important;        /* ارتفاع مناسب */
-    padding: 5px 5px !important;    /* تقليل الحشوة */
-    font-size: 18px !important;     /* تصغير الخط */
-    border-radius: 12px !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-}
-/* تصغير زر قائمة الخدمات إجباري */
-.services-btn {
-    display: inline-block !important;
-    width: 180px !important;         /* العرض */
-    height: 55px !important;         /* الارتفاع */
-    padding: 10px 10px !important;   /* الحشوة الداخلية */
-    font-size: 22px !important;      /* حجم الخط */
-    border-radius: 14px !important;
-    text-align: center !important;
-    line-height: normal !important;
-}
-/* تصغير بوكس زر قائمة الخدمات بالكامل */
-.services-btn {
-    display: inline-block !important;
-    padding: 6px 14px !important;   /* قلل البادينغ */
-    min-width: 140px !important;    /* عرض أصغر */
-    height: auto !important;
-    font-size: 20px !important;     /* حجم الخط */
-    border-radius: 12px !important; /* تدوير أقل */
 }
