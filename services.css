@@ -1,126 +1,100 @@
-/* خلفية السلايد شو من الرئيسية */
-.slideshow img {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    animation: slide 18s infinite;
-    z-index: -3;
+body{
+    margin:0;
+    padding:0;
+    background:#ffffff;
+    font-family:"Cairo",sans-serif;
+    direction:rtl;
+    color:#444;
 }
 
-@keyframes slide {
-    0% { opacity: 0; }
-    12% { opacity: 0.28; }
-    30% { opacity: 0.28; }
-    45% { opacity: 0; }
-    100% { opacity: 0; }
+/* الحاوية العامة */
+.page-container{
+    width:92%;
+    max-width:850px;
+    margin:25px auto 50px;
 }
 
-.slideshow img:nth-child(1){ animation-delay: 0s; }
-.slideshow img:nth-child(2){ animation-delay: 6s; }
-.slideshow img:nth-child(3){ animation-delay: 12s; }
-
-/* طبقة تغميق + تغبيش */
-.dark-layer {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.55);
-    backdrop-filter: blur(4px);
-    z-index: -2;
+/* عنوان رئيسي */
+.main-title{
+    text-align:center;
+    font-size:32px;
+    font-weight:700;
+    color:#b79d7e;
+    margin-bottom:5px;
 }
 
-/* صندوق القائمة */
-.services-box {
-    width: 92%;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 30px;
-    background: rgba(255,255,255,0.82);
-    border-radius: 18px;
-    backdrop-filter: blur(8px);
-    box-shadow: 0 0 25px rgba(0,0,0,0.25);
+/* عنوان فرعي */
+.sub-title{
+    text-align:center;
+    font-size:20px;
+    color:#b79d7e;
+    margin-bottom:35px;
+    font-weight:600;
 }
 
-/* العنوان الرئيسي */
-.top-title {
-    text-align: center;
-    font-size: 28px;
-    font-weight: 700;
-    color: #d9c7a5;
-    margin-bottom: 5px;
+/* صندوق القسم */
+.section{
+    background:white;
+    border:1px solid #e4d6c8;
+    border-radius:14px;
+    padding:20px 18px;
+    margin-bottom:30px;
 }
 
-.top-sub {
-    text-align: center;
-    font-size: 18px;
-    color: #d9c7a5;
-    margin-bottom: 25px;
+/* عنوان القسم */
+.section-title{
+    text-align:center;
+    font-size:24px;
+    font-weight:700;
+    color:#b79d7e;
+    margin-bottom:15px;
 }
 
-/* عنوان القسم الرئيسي — ممتد */
-.section-head {
-    font-size: 26px;
-    font-weight: 700;
-    color: #d9c7a5;
-    text-align: center;
-    margin: 40px 0 15px;
-    letter-spacing: 6px; /* يعطي تأثير المدّ مثل الصورة */
+/* عنوان فرعي داخل القسم */
+.sub-head{
+    font-size:19px;
+    font-weight:600;
+    color:#8a715a;
+    margin:18px 0 10px;
 }
 
-/* العنوان الفرعي داخل القسم */
-.section-sub {
-    font-size: 21px;
-    font-weight: 600;
-    margin: 18px 0 10px;
-    color: #6e5a44;
-    text-align: right;
+/* عنصر الخدمة */
+.item{
+    display:flex;
+    justify-content:space-between;
+    padding:10px 0;
+    border-bottom:1px solid #eee;
+    font-size:17px;
+    color:#3b352f;
 }
 
-/* الخدمة */
-.item {
-    display: flex;
-    justify-content: space-between; /* الاسم يمين — السعر يسار */
-    padding: 12px 0;
-    border-bottom: 1px solid #c9b8a5;
-    font-size: 18px;
-    color: #2b2722;
+.item:last-child{
+    border-bottom:none;
 }
 
 /* السعر */
-.item .price {
-    display: flex;
-    align-items: center;
-    gap: 6px;
+.price{
+    color:#3b352f;
+    display:flex;
+    align-items:center;
+    gap:5px;
 }
 
-.item .price img {
-    width: 17px;
-    vertical-align: middle;
+.price img{
+    width:16px;
+    height:16px;
 }
 
 /* زر العودة */
-.back-btn {
-    display: block;
-    width: fit-content;
-    margin: 35px auto 10px;
-    padding: 12px 26px;
-    background: #d7c3a5;
-    color: #000;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.back-btn:hover {
-    background: #c7b295;
-}
-
-/* تحسين العرض للجوال */
-@media(max-width: 600px){
-    .item { font-size: 17px; }
-    .section-head { font-size: 23px; letter-spacing: 4px; }
-    .section-sub { font-size: 19px; }
+.back-btn{
+    display:block;
+    width:fit-content;
+    margin:40px auto;
+    padding:12px 28px;
+    border-radius:10px;
+    background:#b79d7e;
+    color:white;
+    font-size:18px;
+    text-decoration:none;
+    font-weight:600;
 }
