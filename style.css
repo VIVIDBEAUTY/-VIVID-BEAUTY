@@ -1,6 +1,26 @@
-/* =============================
-   الخلفية المتحركة
-============================= */
+/* إعدادات عامة */
+body{
+    margin:0;
+    padding:0;
+    background:#2b2722; /* خلفية داكنة */
+    font-family:"Tajawal",sans-serif;
+    text-align:center;
+    overflow-x:hidden;
+}
+
+/* طبقة تغميق لإبراز النص */
+body::before{
+    content:"";
+    position:fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    background:rgba(0,0,0,0.45);
+    z-index:0;
+}
+
+/* ================================
+     خلفية سلايد شو – 3 صور
+================================ */
 .slideshow img{
     position:fixed;
     top:0; left:0;
@@ -8,7 +28,7 @@
     object-fit:cover;
     opacity:0;
     animation:slide 18s infinite;
-    z-index:-3;
+    filter:grayscale(75%);
 }
 
 .slideshow img:nth-child(1){ animation-delay:0s; }
@@ -17,115 +37,86 @@
 
 @keyframes slide{
     0%{opacity:0;}
-    15%{opacity:0.32;}
+    10%{opacity:0.32;}
     30%{opacity:0.32;}
-    45%{opacity:0;}
+    40%{opacity:0;}
     100%{opacity:0;}
 }
 
-/* =============================
-   طبقة التعتيم
-============================= */
-.dark-layer{
+/* ================================
+     اللوقو الخلفي الكبير
+================================ */
+.big-logo{
     position:fixed;
-    top:0;left:0;
-    width:100%;height:100%;
-    background:rgba(0,0,0,0.45);
-    backdrop-filter:blur(2px);
-    z-index:-2;
+    top:50%; left:50%;
+    transform:translate(-50%, -50%);
+    width:88%;
+    max-width:900px;
+    opacity:0.16;
+    z-index:1;
+    filter:contrast(150%) brightness(90%);
 }
 
-/* =============================
-   اللوقو الخلفي الكبير
-============================= */
-.big-logo {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 80%;
-    opacity: 0.10;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    pointer-events: none;
-}
-
-/* =============================
-   اللوقو العلوي
-============================= */
+/* ================================
+     اللوقو العلوي
+================================ */
 .logo{
     width:210px;
     margin:40px auto 20px;
+    z-index:5;
     position:relative;
-    z-index:10;
 }
 
-/* =============================
-   العناوين
-============================= */
+/* ================================
+       العنوان والترحيب
+================================ */
 .header-title{
-    font-size:42px;
+    font-size:44px;
     font-weight:700;
-    color:#f4e8d2;
-    text-shadow:0 2px 6px rgba(0,0,0,0.5);
-    z-index:10;
+    color:#D9C7A5;
+    margin-top:10px;
     position:relative;
+    z-index:5;
+    text-shadow:0px 2px 6px rgba(0,0,0,0.55);
 }
 
 .header-sub{
     width:85%;
-    margin:10px auto 35px;
+    margin:12px auto 35px;
     font-size:20px;
-    line-height:1.8;
-    color:#f4e8d2;
-    z-index:10;
+    line-height:1.9;
+    color:#D9C7A5;
+    z-index:5;
     position:relative;
+    text-shadow:0px 2px 5px rgba(0,0,0,0.55);
 }
 
-/* =============================
-   أيقونات التواصل
-============================= */
-.icons {
+/* ================================
+       أيقونات التواصل – عامودي
+================================ */
+.icons{
     display:flex;
     flex-direction:column;
     gap:26px;
     margin-top:20px;
-    z-index:10;
+    z-index:5;
     position:relative;
 }
 
-.icons a {
+.icons a{
     font-size:42px;
-    color:#f4e8d2;
-    animation: pulseIcon 1.6s infinite ease-in-out;
+    color:#D9C7A5;
+    transition:0.25s;
 }
 
-@keyframes pulseIcon {
-    0% { transform:scale(1); opacity:1; }
-    50% { transform:scale(1.18); opacity:0.85; }
-    100% { transform:scale(1); opacity:1; }
+.icons a:hover{
+    transform:scale(1.18);
+    color:#f1dcb8; /* درجة ألمع عند اللمس */
 }
 
-/* =============================
-   زر قائمة الخدمات
-============================= */
-.services-btn {
-    display:block;
-    width:fit-content;
-    margin:30px auto;
-    padding:14px 28px;
-    background:#d7c3a5;
-    color:#000;
-    border-radius:10px;
-    font-size:22px;
-    font-weight:700;
-    text-decoration:none;
-    z-index:10;
-    position:relative;
-}
-
-/* =============================
-   الخريطة
-============================= */
+/* ================================
+            الخريطة
+================================ */
 .map-container{
     width:90%;
     max-width:600px;
@@ -134,16 +125,16 @@
     overflow:hidden;
     box-shadow:0 0 18px rgba(0,0,0,0.35);
     position:relative;
-    z-index:10;
+    z-index:5;
 }
 
-/* =============================
-   الفوتر
-============================= */
+/* ================================
+            الفوتر
+================================ */
 .footer{
     margin:25px 0 35px;
     font-size:15px;
-    color:#f4e8d2;
-    z-index:10;
+    color:#D9C7A5;
+    z-index:5;
     position:relative;
 }
