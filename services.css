@@ -1,0 +1,92 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:"Cairo", sans-serif;
+    background:#2b2722;
+    color:#D9C7A5;
+    text-align:right;
+    direction:rtl;
+}
+
+/* خلفية متحركة */
+.slideshow img{
+    position:fixed;
+    top:0;left:0;
+    width:100%;height:100%;
+    object-fit:cover;
+    opacity:0;
+    animation:slide 18s infinite;
+    z-index:-2;
+}
+
+@keyframes slide{
+    0%{opacity:0;}
+    15%{opacity:0.3;}
+    30%{opacity:0.3;}
+    45%{opacity:0;}
+    100%{opacity:0;}
+}
+
+/* تغبيش خلفي */
+.services-box{
+    width:92%;
+    max-width:780px;
+    margin:40px auto;
+    padding:25px;
+    border-radius:18px;
+    background:rgba(0,0,0,0.45);
+    backdrop-filter:blur(6px);
+    box-shadow:0 0 25px rgba(0,0,0,0.35);
+}
+
+/* عناوين كبيرة ممددة */
+.sec-title{
+    font-size:28px;
+    font-weight:700;
+    text-align:center;
+    margin:45px 0 20px;
+    letter-spacing:3px;
+}
+
+/* عنوان فرعي */
+.sub{
+    font-size:22px;
+    margin-top:25px;
+    margin-bottom:10px;
+    font-weight:700;
+}
+
+/* القائمة */
+.list{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.list li{
+    padding:10px 0;
+    border-bottom:1px solid rgba(255,255,255,0.15);
+    font-size:20px;
+    display:flex;
+    justify-content:space-between;
+}
+
+/* السعر */
+.price{
+    color:#fff;
+    font-weight:600;
+}
+
+/* زر العودة */
+.back-btn{
+    display:block;
+    width:fit-content;
+    margin:40px auto 10px;
+    padding:14px 28px;
+    background:#D9C7A5;
+    color:#000;
+    border-radius:10px;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:700;
+}
