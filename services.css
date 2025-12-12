@@ -121,14 +121,14 @@ a, a:visited, a:active {
     padding:13px 0;
     border-bottom:1px solid #ccbba9;
     font-size:19px;
-    color:#f1e7d5;
+    color:#D9C7A5;
 }
 
 .price{
     display:flex;
     align-items:center;
     gap:6px;
-    color:#f1e7d5;
+    color:#D9C7A5;
 }
 
 .price img{
