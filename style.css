@@ -131,7 +131,7 @@ body * {
     top: 8%;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%;
+    width: 40%;
     opacity: 0.12; /* شفافية ممتازة للخلفية */
     z-index: -1;   /* أهم شيء — يخليه خلف الأيقونات */
     pointer-events: none; /* يمنع التداخل مع الضغط */
