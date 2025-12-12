@@ -6,10 +6,13 @@ body {
     
     background: #f7f3ef;
     animation: bgSlide 18s infinite;
-  background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
-
+body {
+    background-attachment: fixed;
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: bgSlide 15s infinite ease-in-out;
+}
     background-attachment: fixed;
 }
 
