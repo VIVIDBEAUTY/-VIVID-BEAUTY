@@ -104,3 +104,12 @@ body * {
     background: #c8b7a3;
     margin: 25px 0;
 }
+.big-logo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 55%;
+    opacity: 0.08;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
