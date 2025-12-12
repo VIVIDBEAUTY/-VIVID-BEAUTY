@@ -140,18 +140,21 @@ body::before{
 }
 /* زر قائمة الخدمات */
 .services-btn{
-    display:inline-block;
-    margin:10px auto 25px;
-    padding:10px 20px; /* ← صغرنا الزر */
+    display:block;
+    width:140px;            /* ← حجم الزر */
+    padding:10px 0;         /* ← ارتفاع صغير */
     background:#D9C7A5;
-    color: #000 !important;
-    font-size:18px;   /* ← صغرنا الخط */
+    color:#000 !important;
+    font-size:16px;         /* ← خط أصغر */
     font-weight:700;
+    text-align:center;
     border-radius:12px;
-    text-decoration:none;
+    margin:15px auto 20px;
     transition:0.25s;
-    position:relative;
-    z-index:5;
+}
+
+.services-btn:hover{
+    transform:scale(1.05);
 }
 /* للجوال */
 @media (max-width: 600px) {
