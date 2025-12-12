@@ -119,3 +119,14 @@ body * {
     z-index: -1;             /* أهم شيء — يخليه خلف كل شيء */
     pointer-events: none;    /* يمنع أي تداخل مع الضغط */
 }
+/* اللوقو الخلفي الثابت */
+.big-bg-logo {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65%;
+    opacity: 0.12; /* شفافية ممتازة للخلفية */
+    z-index: -1;   /* أهم شيء — يخليه خلف الأيقونات */
+    pointer-events: none; /* يمنع التداخل مع الضغط */
+}
