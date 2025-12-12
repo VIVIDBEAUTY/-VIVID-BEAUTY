@@ -139,21 +139,38 @@ body::before{
     position:relative;
 }
 /* زر قائمة الخدمات */
-.services-btn{
-    display:inline-block;
-    margin:10px auto 25px;
-    padding:14px 26px;
-    background:#D9C7A5;
-    color: #000 !important;
-    font-size:22px;
-    font-weight:700;
-    border-radius:12px;
-    text-decoration:none;
-    transition:0.25s;
-    position:relative;
-    z-index:5;
+/* زر قائمة الخدمات */
+.services-btn {
+    position: relative;
+    z-index: 9999 !important;
+
+    display: block;
+    width: fit-content;
+
+    background: #d7c3a5;
+    color: #000;
+
+    padding: 10px 20px;   /* ← صغرنا الزر */
+    font-size: 18px;      /* ← صغرنا الخط */
+    border-radius: 10px;
+
+    text-decoration: none;
+    font-weight: 700;
+
+    margin: 25px auto;    /* ← مسافة مناسبة */
 }
 
+.services-btn:hover {
+    background: #cbb496;
+}
+
+/* للجوال */
+@media (max-width: 600px) {
+    .services-btn {
+        padding: 9px 18px;
+        font-size: 17px;
+    }
+}
 .services-btn:hover{
     transform:scale(1.06);
     background:#e8d9be;
