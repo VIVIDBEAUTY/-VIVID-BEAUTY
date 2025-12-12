@@ -1,169 +1,83 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIVID BEAUTY | صالون ڤيڤيد بيوتي</title>
 
-<title>VIVID BEAUTY | صالون ڤيفيد بيوتي</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- أيقونات Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- الخط -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<!-- ملف الستايل -->
-<link rel="stylesheet" href="style.css">
+    <!-- الستايل -->
+    <link rel="stylesheet" href="style.css">
+</head>
 
-<style>
-/* خلفية الصفحة */
-body
+<body>
+
+    <!-- طبقة السواد -->
     <div class="dark-overlay"></div>
+
+    <!-- اللوقو الخلفي -->
     <img src="bg-logo.png" class="big-bg-logo">
 
-    {
-    background: #f7f3ef;
-    margin: 0;
-    font-family: "Tahoma", sans-serif;
-}
+    <!-- اللوقو العلوي -->
+    <div style="text-align:center; margin-top:40px;">
+        <img src="logo.png" style="width:150px;">
+    </div>
 
-/* اللوقو */
-.main-logo {
-    width: 160px;
-    margin: 25px auto 10px;
-    display: block;
-}
+    <!-- النص الرئيسي -->
+    <div class="container">
 
-/* العنوان */
-.title {
-    text-align: center;
-    font-size: 30px;
-    color: #6e5a44;
-    font-weight: bold;
-}
+        <h1 class="page-title">صالون ڤيڤيد بيوتي</h1>
 
-/* العنوان الفرعي */
-.subtitle {
-    text-align: center;
-    font-size: 18px;
-    color: #5a4c3b;
-    margin: 10px 25px 20px;
-    line-height: 1.6;
-}
+        <p style="text-align:center; font-size:16px; color:#f4e9dd;">
+            نقدم لكِ تجربة فاخرة تجمع بين الأناقة، الجودة، والعناية المتقنة. جمالك يستحق الأفضل — وڤيفيد بيوتي هنا لخدمتك.
+        </p>
 
-/* أيقونات التواصل */
-.icons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 22px;
-    margin-top: 25px;
-    margin-bottom: 35px;
-}
+        <!-- الأيقونات -->
+        <div style="text-align:center; margin-top:25px;">
 
-.icons a {
-    font-size: 38px;
-    color: #6e5a44;
-    text-decoration: none;
-    animation: pulse 1.7s infinite;
-}
+            <a href="https://www.instagram.com/vividbeauty.sa" target="_blank">
+                <i class="fab fa-instagram" style="font-size:34px; color:#c7b79a; display:block; margin:15px auto;"></i>
+            </a>
 
-@keyframes pulse {
-    0% { transform: scale(1);}
-    50% { transform: scale(1.18);}
-    100% { transform: scale(1);}
-}
+            <a href="https://www.snapchat.com/add/vividbeautysa" target="_blank">
+                <i class="fab fa-snapchat-ghost" style="font-size:34px; color:#c7b79a; display:block; margin:15px auto;"></i>
+            </a>
 
-/* زر قائمة الخدمات */
-.services-btn {
-    display: block;
-    width: 75%;
-    margin: 0 auto 40px;
-    text-align: center;
-    padding: 14px 0;
-    background: #7a6a50;
-    color: white;
-    font-size: 20px;
-    border-radius: 10px;
-    text-decoration: none;
-}
+            <a href="https://www.tiktok.com/@vividbeauty.sa" target="_blank">
+                <i class="fab fa-tiktok" style="font-size:34px; color:#c7b79a; display:block; margin:15px auto;"></i>
+            </a>
 
-.services-btn:hover {
-    background: #6a5a42;
-}
+            <a href="https://wa.me/966546679537" target="_blank">
+                <i class="fab fa-whatsapp" style="font-size:34px; color:#c7b79a; display:block; margin:15px auto;"></i>
+            </a>
 
-/* خريطة Google */
-.map-container {
-    width: 92%;
-    max-width: 900px;
-    margin: 0 auto 40px;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-}
+            <a href="tel:+966546679537">
+                <i class="fa-solid fa-phone" style="font-size:34px; color:#c7b79a; display:block; margin:15px auto;"></i>
+            </a>
 
-/* الحقوق */
-.footer {
-    text-align: center;
-    padding: 18px;
-    color: #6e5a44;
-    font-size: 16px;
-}
-</style>
+            <a href="https://maps.app.goo.gl/3H9jQ4Ditvi1mBS87" target="_blank">
+                <i class="fa-solid fa-location-dot" style="font-size:34px; color:#c7b79a; display:block; margin:15px auto;"></i>
+            </a>
 
-</head>
-<body>
-<div class="dark-overlay"></div>
-<img src="bg-logo.png" class="big-logo">
+        </div>
 
-<div class="dark-overlay"></div>
-<img src="logo.png" class="main-logo">
+        <!-- زر الخدمات -->
+        <div style="text-align:center; margin-top:20px;">
+            <a href="services.html" class="back-btn">خدمات VIVID BEAUTY</a>
+        </div>
 
-<h1 class="title">صالون ڤيفيد بيوتي</h1>
+        <!-- الخريطة -->
+        <div class="map-container" style="margin-top:30px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3573.366742801668!2d43.9332979!3d26.4116391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x157f570055d04f5b%3A0x4fa7c82c71a48aa9!2z2LXYp9mE2YjZhiDapNmK2qTZitivINio2YrZiNiq2YogfCBWSVZJRCBCRUFVVFk!5e0!3m2!1sar!2ssa!4v1765459141211!5m2!1sar!2ssa"
+                width="100%" height="300" style="border:0; border-radius:10px;" allowfullscreen loading="lazy"></iframe>
+        </div>
 
-<p class="subtitle">
-نقدم لكِ تجربة فاخرة تجمع بين الأناقة، الجودة، والعناية المتقنة.  
-جمالك يستحق الأفضل — وڤيفيد بيوتي هنا لخدمتك.
-</p>
-
-<!-- أيقونات التواصل -->
-<div class="icons">
-
-    <a href="https://www.instagram.com/vividbeauty.sa" target="_blank">
-        <i class="fab fa-instagram"></i>
-    </a>
-
-    <a href="https://www.snapchat.com/add/vividbeautysa" target="_blank">
-        <i class="fab fa-snapchat-ghost"></i>
-    </a>
-
-    <a href="https://www.tiktok.com/@vividbeauty.sa" target="_blank">
-        <i class="fab fa-tiktok"></i>
-    </a>
-
-    <a href="https://wa.me/966546679537" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <a href="tel:+966546679537">
-        <i class="fa-solid fa-phone"></i>
-    </a>
-
-    <a href="https://maps.app.goo.gl/3H9jQ4Ditvi1mBS87" target="_blank">
-        <i class="fa-solid fa-location-dot"></i>
-    </a>
-
-</div>
-
-<!-- زر قائمة الخدمات -->
-<a href="services.html" class="services-btn">خدمات VIVID BEAUTY</a>
-
-<!-- خريطة Google -->
-<div class="map-container">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3573.366742801668!2d43.9332979!3d26.4116391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x157f570055d04f5b%3A0x4fa7c82c71a48aa9!2z2LXYp9mE2YjZhiDapNmK2qTZitivINio2YrZiNiq2YogfCBWSVZJRCBCRUFVVFk!5e0!3m2!1sar!2ssa!4v1765459141211!5m2!1sar!2ssa"
-width="100%" height="350" style="border:0;" allowfullscreen loading="lazy"></iframe>
-</div>
-
-<div class="footer">
-© جميع الحقوق محفوظة — VIVID BEAUTY Salon
-</div>
+    </div>
 
 </body>
 </html>
