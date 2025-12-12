@@ -4,207 +4,130 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>قائمة الخدمات | VIVID BEAUTY</title>
+<title>خدمات VIVID BEAUTY</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
-
-<style>
-
-body{
-    background:#f7f3ef;
-    font-family:"Cairo", sans-serif;
-    margin:0;
-    padding:0;
-}
-
-.container{
-    width:92%;
-    max-width:850px;
-    margin:40px auto;
-    background:#ffffff;
-    padding:30px 35px;
-    border-radius:14px;
-    box-shadow:0 4px 20px rgba(0,0,0,0.12);
-}
-
-/* عنوان الصفحة */
-.page-title{
-    text-align:center;
-    font-size:32px;
-    margin-bottom:25px;
-    color:#6e5a44;
-    font-weight:700;
-}
-
-/* عناوين الأقسام */
-.section-title{
-    margin-top:35px;
-    margin-bottom:12px;
-    font-size:22px;
-    font-weight:700;
-    color:#7a6752;
-    border-right:5px solid #b8a491;
-    padding-right:12px;
-}
-
-/* عنصر الخدمة */
-.service-item{
-    display:flex;
-    justify-content:space-between;
-    padding:11px 0;
-    font-size:20px;
-    border-bottom:1px solid #ddd;
-    color:#333;
-}
-
-/* رمز الريال */
-.sar-icon{
-    width:18px;
-    vertical-align:middle;
-    margin-left:6px;
-}
-
-/* الفواصل */
-.divider{
-    height:1px;
-    background:#c8b7a3;
-    margin:25px 0;
-}
-
-/* زر العودة */
-.back-btn{
-    display:block;
-    width:240px;
-    margin:40px auto 20px;
-    text-align:center;
-    background:#7a6a50;
-    color:white;
-    padding:14px;
-    font-size:20px;
-    border-radius:12px;
-    text-decoration:none;
-    font-weight:700;
-}
-.back-btn:hover{
-    background:#6a5a42;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="services-page">
 
-<div class="container">
+<!-- خلفية متحركة -->
+<div class="slideshow">
+    <img src="bg1.jpg">
+    <img src="bg2.jpg">
+    <img src="bg3.jpg">
+</div>
 
-<h1 class="page-title">قائمة خدمات VIVID BEAUTY</h1>
+<!-- طبقة التعتيم -->
+<div class="dark-layer"></div>
 
-<!-- ========================= -->
-<!-- العناية بالشعر -->
-<!-- ========================= -->
-<div class="section-title">العناية بالشعر</div>
+<!-- المحتوى -->
+<div class="services-container">
 
-<div class="service-item"><span>غسيل الشعر</span> <span><img src="sar.png" class="sar-icon">25</span></div>
-<div class="service-item"><span>غسيل الشعر مع ماسك عناية عميق</span> <span><img src="sar.png" class="sar-icon">89</span></div>
-
-<div class="divider"></div>
-
-<!-- ========================= -->
-<!-- الاستشوار -->
-<!-- ========================= -->
-<div class="section-title">الاستشوار</div>
-
-<div class="service-item"><span>استشوار عادي</span> <span><img src="sar.png" class="sar-icon">60 - 100</span></div>
-<div class="service-item"><span>استشوار ويفي</span> <span><img src="sar.png" class="sar-icon">100 - 150</span></div>
-
-<div class="divider"></div>
-
-<!-- ========================= -->
-<!-- القصّات -->
-<!-- ========================= -->
-<div class="section-title">القصّات</div>
-
-<div class="service-item"><span>قص شعر</span> <span><img src="sar.png" class="sar-icon">49</span></div>
-<div class="service-item"><span>قص أطراف</span> <span><img src="sar.png" class="sar-icon">29</span></div>
-<div class="service-item"><span>قص غرة</span> <span><img src="sar.png" class="sar-icon">35</span></div>
-
-<div class="divider"></div>
+<h1 class="page-title">خدمات VIVID BEAUTY</h1>
 
 
-<!-- ========================= -->
-<!-- معالجات الشعر -->
-<!-- ========================= -->
-<div class="section-title">معالجات الشعر</div>
+<!-- =====================
+      الأظافر
+======================= -->
+<h2 class="section-title">الأظافر</h2>
 
-<div class="service-item"><span>تقشير فروة</span> <span><img src="sar.png" class="sar-icon">189</span></div>
-<div class="service-item"><span>معالج الكهرمان</span> <span><img src="sar.png" class="sar-icon">990 - 1490</span></div>
-<div class="service-item"><span>معالج بيبي كريم</span> <span><img src="sar.png" class="sar-icon">990 - 1490</span></div>
-<div class="service-item"><span>معالج بارد</span> <span><img src="sar.png" class="sar-icon">249 - 349</span></div>
+<div class="service-item"><span>مونكير عناية بالأيدي سيقنتشر</span><span class="price"><img src="sar.png">94</span></div>
+<div class="service-item"><span>بوديكير عناية بالأرجل سيقنتشر</span><span class="price"><img src="sar.png">99</span></div>
+<div class="service-item"><span>مونكير عناية بالأيدي كلاسك</span><span class="price"><img src="sar.png">79</span></div>
+<div class="service-item"><span>بوديكير عناية بالأرجل كلاسك</span><span class="price"><img src="sar.png">84</span></div>
+<div class="service-item"><span>تنظيف روسي كلاسك</span><span class="price"><img src="sar.png">99</span></div>
+<div class="service-item"><span>تنظيف روسي سيقنتشر</span><span class="price"><img src="sar.png">149</span></div>
 
-<div class="divider"></div>
-
-
-<!-- ========================= -->
-<!-- الصبغات -->
-<!-- ========================= -->
-<div class="section-title">الصبغات</div>
-
-<div class="service-item"><span>صبغة لون واحد</span> <span><img src="sar.png" class="sar-icon">289</span></div>
-<div class="service-item"><span>صبغة جذور</span> <span><img src="sar.png" class="sar-icon">145</span></div>
-<div class="service-item"><span>كونتور غرة</span> <span><img src="sar.png" class="sar-icon">145</span></div>
-<div class="service-item"><span>صبغة هايلايت</span> <span><img src="sar.png" class="sar-icon">569</span></div>
-<div class="service-item"><span>رنساج الشعر</span> <span><img src="sar.png" class="sar-icon">175</span></div>
-
-<div class="divider"></div>
+<h3 class="section-title sub">إضافات أظافر</h3>
+<div class="service-item"><span>تركيب أظافر عادي مع لون</span><span class="price"><img src="sar.png">70</span></div>
+<div class="service-item"><span>لون مناكير</span><span class="price"><img src="sar.png">16</span></div>
+<div class="service-item"><span>آرت للظفر الواحد</span><span class="price"><img src="sar.png">9 - 15</span></div>
+<div class="service-item"><span>فرنسي لون عادي</span><span class="price"><img src="sar.png">40</span></div>
+<div class="service-item"><span>أومبري لون عادي</span><span class="price"><img src="sar.png">45</span></div>
+<div class="service-item"><span>كروم لون عادي</span><span class="price"><img src="sar.png">20</span></div>
 
 
+<!-- =====================
+      الشعر
+======================= -->
+<h2 class="section-title">العناية بالشعر</h2>
 
-<!-- ========================= -->
-<!-- الأظافر -->
-<!-- ========================= -->
-<div class="section-title">الأظافر</div>
+<div class="service-item"><span>غسيل الشعر</span><span class="price"><img src="sar.png">25</span></div>
+<div class="service-item"><span>غسيل الشعر مع ماسك عناية عميق</span><span class="price"><img src="sar.png">89</span></div>
 
-<div class="service-item"><span>مونكير عناية بالأيدي سيقنتشر</span> <span><img src="sar.png" class="sar-icon">94</span></div>
-<div class="service-item"><span>بوديكير عناية بالأرجل سيقنتشر</span> <span><img src="sar.png" class="sar-icon">99</span></div>
-<div class="service-item"><span>مونكير عناية بالأيدي كلاسك</span> <span><img src="sar.png" class="sar-icon">79</span></div>
-<div class="service-item"><span>بوديكير عناية بالأرجل كلاسك</span> <span><img src="sar.png" class="sar-icon">84</span></div>
+<h3 class="section-title sub">الاستشوار</h3>
+<div class="service-item"><span>استشوار عادي</span><span class="price"><img src="sar.png">60 - 100</span></div>
+<div class="service-item"><span>استشوار ويفي</span><span class="price"><img src="sar.png">100 - 150</span></div>
+<div class="service-item"><span>فير للشعر</span><span class="price"><img src="sar.png">100 - 150</span></div>
 
-<div class="divider"></div>
+<h3 class="section-title sub">القصّات</h3>
+<div class="service-item"><span>قص شعر</span><span class="price"><img src="sar.png">49</span></div>
+<div class="service-item"><span>قص أطراف</span><span class="price"><img src="sar.png">29</span></div>
+<div class="service-item"><span>قص غرة</span><span class="price"><img src="sar.png">35</span></div>
 
-<!-- ========================= -->
-<!-- الخدمات الإضافية للأظافر -->
-<!-- ========================= -->
-<div class="section-title">خدمات إضافية للأظافر</div>
-
-<div class="service-item"><span>تركيب أظافر مع لون</span> <span><img src="sar.png" class="sar-icon">70</span></div>
-<div class="service-item"><span>لون مناكير</span> <span><img src="sar.png" class="sar-icon">16</span></div>
-<div class="service-item"><span>آرت للظفر الواحد</span> <span><img src="sar.png" class="sar-icon">9 - 15</span></div>
-
-<div class="divider"></div>
+<h3 class="section-title sub">معالجات الشعر</h3>
+<div class="service-item"><span>تقشير فروة</span><span class="price"><img src="sar.png">189</span></div>
+<div class="service-item"><span>معالج الكهرمان</span><span class="price"><img src="sar.png">990 - 1490</span></div>
+<div class="service-item"><span>معالج بيبي كريم</span><span class="price"><img src="sar.png">990 - 1490</span></div>
+<div class="service-item"><span>معالج بارد</span><span class="price"><img src="sar.png">249 - 349</span></div>
 
 
+<!-- =====================
+      الصبغات
+======================= -->
+<h2 class="section-title">الصبغات</h2>
 
-<!-- ========================= -->
-<!-- الحواجب -->
-<!-- ========================= -->
-<div class="section-title">الحواجب</div>
+<div class="service-item"><span>صبغة لون واحد</span><span class="price"><img src="sar.png">289</span></div>
+<div class="service-item"><span>صبغة جذور</span><span class="price"><img src="sar.png">145</span></div>
+<div class="service-item"><span>كونتور غرة</span><span class="price"><img src="sar.png">145</span></div>
+<div class="service-item"><span>صبغة هايلايت</span><span class="price"><img src="sar.png">569</span></div>
+<div class="service-item"><span>رنساج الشعر</span><span class="price"><img src="sar.png">175</span></div>
 
-<div class="service-item"><span>تشقير حواجب</span> <span><img src="sar.png" class="sar-icon">35</span></div>
-<div class="service-item"><span>صبغة حواجب</span> <span><img src="sar.png" class="sar-icon">35</span></div>
 
-<div class="divider"></div>
+<!-- =====================
+      الرموش
+======================= -->
+<h2 class="section-title">الرموش</h2>
 
-<!-- ========================= -->
-<!-- الرموش -->
-<!-- ========================= -->
-<div class="section-title">الرموش</div>
+<div class="service-item"><span>رفع رموش</span><span class="price"><img src="sar.png">249</span></div>
+<div class="service-item"><span>رفع حواجب</span><span class="price"><img src="sar.png">249</span></div>
+<div class="service-item"><span>رفع رموش + حواجب</span><span class="price"><img src="sar.png">449</span></div>
 
-<div class="service-item"><span>رفع رموش</span> <span><img src="sar.png" class="sar-icon">249</span></div>
-<div class="service-item"><span>رفع حواجب</span> <span><img src="sar.png" class="sar-icon">249</span></div>
+<h3 class="section-title sub">الرموش الشهرية والأسبوعية</h3>
+<div class="service-item"><span>رموش أسبوعية</span><span class="price"><img src="sar.png">198</span></div>
+<div class="service-item"><span>رموش شهرية كلاسيك</span><span class="price"><img src="sar.png">298</span></div>
+<div class="service-item"><span>رموش شهرية فوليوم</span><span class="price"><img src="sar.png">345</span></div>
+<div class="service-item"><span>ريفيل رموش</span><span class="price"><img src="sar.png">130</span></div>
+<div class="service-item"><span>إزالة رموش</span><span class="price"><img src="sar.png">50</span></div>
 
-<div class="divider"></div>
+
+<!-- =====================
+      الحواجب
+======================= -->
+<h2 class="section-title">الحواجب</h2>
+
+<div class="service-item"><span>تشقير حواجب</span><span class="price"><img src="sar.png">35</span></div>
+<div class="service-item"><span>صبغة حواجب</span><span class="price"><img src="sar.png">35</span></div>
+<div class="service-item"><span>تشقير + صبغة</span><span class="price"><img src="sar.png">69</span></div>
+
+
+<!-- =====================
+      الشمع
+======================= -->
+<h2 class="section-title">إزالة الشعر بالشمع</h2>
+
+<div class="service-item"><span>شمع شارب</span><span class="price"><img src="sar.png">25</span></div>
+<div class="service-item"><span>شمع حواجب</span><span class="price"><img src="sar.png">40</span></div>
+<div class="service-item"><span>شمع رقبة</span><span class="price"><img src="sar.png">35</span></div>
+<div class="service-item"><span>شمع وجه كامل</span><span class="price"><img src="sar.png">57</span></div>
+
 
 <!-- زر العودة -->
-<a href="index.html" class="back-btn">العودة للرئيسية</a>
+<div class="back-center">
+    <a href="index.html" class="back-btn">العودة للرئيسية</a>
+</div>
 
 </div>
 
