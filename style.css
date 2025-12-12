@@ -189,3 +189,14 @@ body::before{
         opacity: 1;
     }
 }
+/* إجبار زر قائمة الخدمات على الحجم الصغير */
+.services-btn {
+    width: 160px !important;        /* عرض صغير */
+    height: 50px !important;        /* ارتفاع مناسب */
+    padding: 5px 5px !important;    /* تقليل الحشوة */
+    font-size: 18px !important;     /* تصغير الخط */
+    border-radius: 12px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
