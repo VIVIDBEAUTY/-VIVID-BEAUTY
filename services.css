@@ -36,8 +36,8 @@ body{
     max-width:800px;
 
     /* 🔥 الخلفية الشفافة الضبابية */
-    background: rgba(225, 225, 225, 0.15); /* شفافية أقل تعطي فخامة أكثر */
-    backdrop-filter: blur(7px) saturate(5%); /* ضبابية قوية وواضحة */
+    background: rgba(225, 225, 225, 0.68); /* شفافية أقل تعطي فخامة أكثر */
+    backdrop-filter: blur(14px) saturate(5%); /* ضبابية قوية وواضحة */
     -webkit-backdrop-filter: blur(14px) saturate(50%); /* دعم للآيفون */
 
     border-radius:25px;
@@ -149,4 +149,12 @@ body{
     margin:40px auto 20px;
     z-index:5;
     position:relative;
+}
+.section-head{
+    font-size:24px;
+    font-weight:700;
+    color:#d9c7a5;
+    text-align:center;
+    margin:40px 0 15px;
+    letter-spacing:3px;
 }
