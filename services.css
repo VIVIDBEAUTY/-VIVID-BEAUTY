@@ -17,8 +17,8 @@ body {
 
 /* صندوق الخدمات */
 .services-box {
-    background: rgba(255, 255, 255, 0.18) !important;
-    backdrop-filter: blur(10px) !important;
+    background: rgba(255, 255, 255, 0.10) !important;
+    backdrop-filter: blur(6px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
     border-radius: 16px;
     padding: 25px;
