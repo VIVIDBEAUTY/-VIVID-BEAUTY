@@ -1,10 +1,10 @@
-/* خلفية ثابتة */
 body {
     margin: 0;
     padding: 0;
-    background: url("bg1.jpg") no-repeat center center fixed;
-    background-size: cover;
-    font-family: "Tajawal", sans-serif;
+    background: url("bg1.jpg") center top no-repeat fixed; 
+    background-size: contain;  /* يخلي الصورة تظهر بحجمها الطبيعي بدون تكبير */
+    background-color: #2b2722; /* لون خلفية إذا انتهت حدود الصورة */
+}
 }
 
 /* حاوية الصفحة */
