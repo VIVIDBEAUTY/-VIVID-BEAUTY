@@ -1,12 +1,17 @@
-body{
-    margin:0;
-    padding:0;
-    background:#EDE3D2;
-    font-family:"Cairo",sans-serif;
-    direction:rtl;
-    color:#444;
+body {
+    margin: 0;
+    padding: 0;
+    background: url("bg1.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
-
+.services-box {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
 /* الحاوية العامة */
 .page-container{
     width:92%;
