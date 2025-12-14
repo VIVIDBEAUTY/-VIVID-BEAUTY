@@ -13,10 +13,12 @@ body {
     margin-bottom: 25px;
 }
 /* الحاوية العامة */
-.page-container{
-    width:92%;
-    max-width:850px;
-    margin:25px auto 50px;
+.page-container {
+    width: 92%;
+    max-width: 850px;
+    margin: 25px auto 50px;
+    background: transparent !important; /* يحذف الخلفية البيضاء */
+    box-shadow: none !important;       /* يلغي أي ظل أبيض */
 }
 
 /* عنوان رئيسي */
