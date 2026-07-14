@@ -145,7 +145,26 @@
         <div class="item"><span>شمع وجه</span><span class="price">57 <img src="sar.png"></span></div>
     </div>
 <a href="index.html" class="back-btn">العودة للرئيسية</a>
-</div>
-</div>
+<script>
+  function submitBooking(event) {
+    event.preventDefault();
+    // الرابط الخاص بك الذي حصلت عليه من الـ Deploy
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzRusJXN0ySUQ0RZIzFiVBki_SRQginPqW3H3qwpD2LXCqzqLfXul_TjveUgwdXygsshA/exec';
+    
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData.entries());
+
+    fetch(scriptURL, { 
+      method: 'POST', 
+      mode: 'no-cors',
+      body: JSON.stringify(data) 
+    })
+    .then(() => {
+      alert('تم استلام طلب الحجز الخاص بكم، وسوف يتم التواصل للتاكيد في اسرع وقت، شاكرين لكم!');
+      event.target.reset(); // لمسح البيانات بعد الإرسال
+    })
+    .catch(() => alert('حدث خطأ، يرجى المحاولة لاحقاً.'));
+  }
+</script>
 </body>
 </html>
