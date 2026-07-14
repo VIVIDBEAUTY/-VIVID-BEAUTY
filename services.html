@@ -1,4 +1,4 @@
-{<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
@@ -6,51 +6,65 @@
 <title>قائمة الخدمات | VIVID BEAUTY</title>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="services.css">
+<style>
+    .add-btn { background: #c5a059; color: white; border: none; padding: 4px 8px; cursor: pointer; border-radius: 4px; font-size: 0.7em; margin-right: 5px; }
+    #cart-summary { position: fixed; bottom: 0; width: 100%; background: #333; color: white; padding: 15px; text-align: center; z-index: 1000; }
+    .item { display: flex; justify-content: space-between; padding: 10px; border-bottom: 1px solid #eee; }
+</style>
 </head>
-
 <body>
-<div class="fixed-bg"></div>
 <div class="page-container">
-
     <h1 class="main-title">VIVID BEAUTY</h1>
-    <h2 class="sub-title">دليل الأسعار والخدمات</h2>
-<p style="text-align: center; font-size: 0.9em; color: #D9C7A5; font-weight: 300;">الأسعار تشمل ضريبة القيمة المضافة</p>
-    <form onsubmit="submitBooking(event)" style="padding: 20px; background: #f9f9f9; border-radius: 10px; margin-bottom: 20px;">
-    <h3 style="text-align: center;">احجز خدمتك الآن</h3>
-    <input type="text" name="name" placeholder="الاسم الكريم" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
-    <input type="tel" name="phone" placeholder="رقم الجوال" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
-    <input type="text" name="services" placeholder="الخدمة المطلوبة" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
-    <button type="submit" style="width: 100%; padding: 10px; background: #c5a059; color: white; border: none; cursor: pointer;">إرسال الحجز</button>
-</form>
-    <div class="services-box section">
-        <div class="section-title">خدمات القص</div>
-        <div class="item"><span>تحديد أطراف الشعر</span><span class="price">35 <img src="sar.png"></span></div>
-        <div class="item"><span>قص أطراف الشعر يبدأ من</span><span class="price">59 <img src="sar.png"></span></div>
-        <div class="item"><span>قص الشعر ستايل</span><span class="price">49 <img src="sar.png"></span></div>
-        <div class="item"><span>قص غرة</span><span class="price">35 <img src="sar.png"></span></div>
+    <h2 class="sub-title">قائمة الخدمات التفاعلية</h2>
+    <div style="padding: 15px; background: #f9f9f9; border-radius: 8px;">
+        <input type="text" id="cust-name" placeholder="الاسم الكريم" style="width: 100%; padding: 8px; margin-bottom: 5px;">
+        <input type="tel" id="cust-phone" placeholder="رقم الجوال" style="width: 100%; padding: 8px;">
+    </div>
+<div class="services-box"><div class="section-title">خدمات القص</div>
+        <div class="item"><span>تحديد أطراف الشعر</span><span>35 <img src="sar.png"> <button class="add-btn" onclick="addToCart('تحديد أطراف الشعر', 35)">إضافة</button></span></div>
+        <div class="item"><span>قص أطراف الشعر</span><span>59 <img src="sar.png"> <button class="add-btn" onclick="addToCart('قص أطراف الشعر', 59)">إضافة</button></span></div>
+        <div class="item"><span>قص ستايل</span><span>49 <img src="sar.png"> <button class="add-btn" onclick="addToCart('قص ستايل', 49)">إضافة</button></span></div>
+        <div class="item"><span>قص غرة</span><span>35 <img src="sar.png"> <button class="add-btn" onclick="addToCart('قص غرة', 35)">إضافة</button></span></div>
     </div>
 
 
-    <div class="services-box section">
-        <div class="section-title">خدمات استشوار الشعر</div>
-        <div class="item"><span>استشوار عادي يبدأ من</span><span class="price">70 <img src="sar.png"></span></div>
-        <div class="item"><span>ااﺳﺗﺷوار وﯾﭭﻲ ﯾﺑدأ ﻣن </span><span class="price">99 <img src="sar.png"></span></div>
-        <div class="item"><span>ويفي ريترو مفتوح يبدأ من</span><span class="price">99 <img src="sar.png"></span></div>
+   <div class="services-box section">
+    <div class="section-title">خدمات استشوار الشعر</div>
+    
+    <div class="item">
+        <span>استشوار عادي يبدأ من</span>
+        <span class="price">70 <img src="sar.png"> 
+        <button class="add-btn" onclick="addToCart('استشوار عادي يبدأ من', 70)">إضافة</button>
+        </span>
     </div>
+    
+    <div class="item">
+        <span>ااﺳﺗﺷوار وﯾﭭﻲ ﯾﺑدأ ﻣن</span>
+        <span class="price">99 <img src="sar.png"> 
+        <button class="add-btn" onclick="addToCart('ااﺳﺗﺷوار وﯾﭭﻲ ﯾﺑدأ ﻣن', 99)">إضافة</button>
+        </span>
+    </div>
+    
+    <div class="item">
+        <span>ويفي ريترو مفتوح يبدأ من</span>
+        <span class="price">99 <img src="sar.png"> 
+        <button class="add-btn" onclick="addToCart('ويفي ريترو مفتوح يبدأ من', 99)">إضافة</button>
+        </span>
+    </div>
+</div>
 
     
-    <div class="services-box section">
-        <div class="section-title">خدمات العناية والمعالجات</div>
-        <div class="item"><span>غسيل عادي</span><span class="price">25 <img src="sar.png"></span></div>
-        <div class="item"><span>غسيل عناية</span><span class="price">89 <img src="sar.png"></span></div>
-        <div class="item"><span>ديتوكس فروة الرأس</span><span class="price">189 <img src="sar.png"></span></div>
-        <div class="item"><span>ديتوكس VIP لفروة الرأس</span><span class="price">289 <img src="sar.png"></span></div>
-        <div class="item"><span>معالج الفيلر البارد</span><span class="price">340 <img src="sar.png"></span></div>
-        <div class="item"><span>معالج البيبي كريم يبدأ من</span><span class="price">499 <img src="sar.png"></span></div>
-        <div class="item"><span>معالج الكهرمان يبدأ من</span><span class="price">990 <img src="sar.png"></span></div>
-        <div class="item"><span>معالج فرد بالكولاجين الخام يبدأ من</span><span class="price">799 <img src="sar.png"></span></div>
-    </div>
-
+  <div class="services-box section">
+    <div class="section-title">خدمات العناية والمعالجات</div>
+    <div class="item"><span>غسيل عادي</span><span class="price">25 <img src="sar.png"> <button class="add-btn" onclick="addToCart('غسيل عادي', 25)">إضافة</button></span></div>
+    <div class="item"><span>غسيل عناية</span><span class="price">89 <img src="sar.png"> <button class="add-btn" onclick="addToCart('غسيل عناية', 89)">إضافة</button></span></div>
+    <div class="item"><span>ديتوكس فروة الرأس</span><span class="price">189 <img src="sar.png"> <button class="add-btn" onclick="addToCart('ديتوكس فروة الرأس', 189)">إضافة</button></span></div>
+    <div class="item"><span>ديتوكس VIP لفروة الرأس</span><span class="price">289 <img src="sar.png"> <button class="add-btn" onclick="addToCart('ديتوكس VIP لفروة الرأس', 289)">إضافة</button></span></div>
+    <div class="item"><span>معالج الفيلر البارد</span><span class="price">340 <img src="sar.png"> <button class="add-btn" onclick="addToCart('معالج الفيلر البارد', 340)">إضافة</button></span></div>
+    <div class="item"><span>معالج البيبي كريم يبدأ من</span><span class="price">499 <img src="sar.png"> <button class="add-btn" onclick="addToCart('معالج البيبي كريم يبدأ من', 499)">إضافة</button></span></div>
+    <div class="item"><span>معالج الكهرمان يبدأ من</span><span class="price">990 <img src="sar.png"> <button class="add-btn" onclick="addToCart('معالج الكهرمان يبدأ من', 990)">إضافة</button></span></div>
+    <div class="item"><span>معالج فرد بالكولاجين الخام يبدأ من</span><span class="price">799 <img src="sar.png"> <button class="add-btn" onclick="addToCart('معالج فرد بالكولاجين الخام يبدأ من', 799)">إضافة</button></span></div>
+</div>
     <div class="services-box section">
         <div class="section-title">خدمات الصبغة</div>
         <div class="item"><span>صبغة جذور</span><span class="price">175 <img src="sar.png"></span></div>
