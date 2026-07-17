@@ -1,3 +1,117 @@
+/* ——————————————————————
+   خلفية ثابتة — بدون تغبيش نهائياً
+—————————————————————— */
+.fixed-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+/* هذه هي الطبقة الجديدة التي ستغمق الخلفية */
+.fixed-bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* الرقم 0.7 هو درجة التعتيم، زوده لـ 0.8 إذا أردت غمقاً أكثر */
+    z-index: 1;
+}
+
+/* ——————————————————————
+   الصفحة
+—————————————————————— */
+body {
+    margin: 0;
+    padding: 0;
+    background: none !important; /* لأن الخلفية الآن من .fixed-bg */
+}
+
+/* الحاوية الرئيسية */
+.page-container {
+    width: 92%;
+    max-width: 850px;
+    margin: 30px auto;
+    position: relative;
+    z-index: 5;
+}
+
+/* العناوين */
+.main-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #e8d3b5;
+    margin-bottom: 5px;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 20px;
+    color: #e8d3b5;
+    margin-bottom: 35px;
+    font-weight: 600;
+}
+
+/* ——————————————————————
+   صناديق الخدمات — شفافة جداً وواضحة
+—————————————————————— */
+.services-box {
+    background: rgba(255, 255, 255, 0.12); /* شفافية فقط */
+    backdrop-filter: blur(3px);            /* تغبيش خفيف للصندوق نفسه */
+    -webkit-backdrop-filter: blur(3px);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 35px;
+}
+
+/* عناوين الأقسام */
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #e8d3b5;
+    margin-bottom: 15px;
+}
+
+/* العناوين الفرعية داخل الأقسام */
+.sub-head {
+    font-size: 19px;
+    font-weight: 600;
+    color: #e8d3b5;   
+    margin: 18px 0 10px;
+}
+
+/* عنصر الخدمة - تم إغلاق القوس وتوحيد اللون لكل ما بداخل الخدمة */
+.item, .item * {
+    color: #e8d3b5 !important; /* يجبر الخدمات، الملاحظات، والأسعار على أخذ نفس لون العناوين */
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    font-size: 17px;
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+} /* ← تم إضافة القوس الذي كان مفقوداً هنا وتسبب في تخريب الزر */
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.price img {
+    width: 17px;
+    height: 17px;
+}
+
 /* زر العودة المحدث */
 .back-btn {
     display: block;
@@ -7,11 +121,10 @@
     font-size: 18px;
     border-radius: 12px;
     background: #b79d7e;
-    color: #fff;
+    color: #fff !important; /* نضمن بقاء نص الزر باللون الأبيض */
     text-decoration: none;
     font-weight: 600;
     
-    /* السطرين الجدد لحل المشكلة */
-    position: relative; /* لكي يعمل الترتيب الرقمي */
-    z-index: 6;         /* يرفعه فوق تعتيم الخلفية (1) وفوق الحاوية (5) */
+    position: relative; 
+    z-index: 10; /* رفعنا الرقم لـ 10 للتأكد من ظهوره فوق كل شيء */
 }
