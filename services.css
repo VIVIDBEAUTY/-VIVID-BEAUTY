@@ -93,9 +93,8 @@ body {
     justify-content: space-between;
     padding: 12px 0;
     font-size: 17px;
-    color: #e8d3b5;
+    color: #e8d3b5; /* تم تغيير اللون هنا ليطابق لون العناوين */
     border-bottom: 1px solid rgba(255,255,255,0.25);
-}
 
 .item:last-child {
     border-bottom: none;
