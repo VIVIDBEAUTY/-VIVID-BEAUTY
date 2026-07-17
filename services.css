@@ -1,4 +1,4 @@
-
+/* ——————————————————————
    خلفية ثابتة — بدون تغبيش نهائياً
 —————————————————————— */
 .fixed-bg {
@@ -22,7 +22,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* الرقم 0.7 هو درجة التعتيم، زوده لـ 0.8 إذا أردت غمقاً أكثر */
+    background-color: rgba(0, 0, 0, 0.8); /* الرقم 0.7 هو درجة التعتيم، زوده لـ 0.8 إذا أردت غمقاً أكثر */
     z-index: 1;
 }
 /* ——————————————————————
@@ -93,8 +93,9 @@ body {
     justify-content: space-between;
     padding: 12px 0;
     font-size: 17px;
-    color: #e8d3b5; /* تم تغيير اللون هنا ليطابق لون العناوين */
+    color: #2B1C10;
     border-bottom: 1px solid rgba(255,255,255,0.25);
+}
 
 .item:last-child {
     border-bottom: none;
@@ -105,7 +106,7 @@ body {
     height: 17px;
 }
 
-/* زر العودة المحدث */
+/* زر العودة */
 .back-btn {
     display: block;
     width: fit-content;
@@ -117,8 +118,4 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-    
-    /* السطرين الجدد لحل المشكلة */
-    position: relative; /* لكي يعمل الترتيب الرقمي */
-    z-index: 6;         /* يرفعه فوق تعتيم الخلفية (1) وفوق الحاوية (5) */
 }
