@@ -105,7 +105,7 @@ body {
     height: 17px;
 }
 
-/* زر العودة */
+/* زر العودة المحدث */
 .back-btn {
     display: block;
     width: fit-content;
@@ -117,4 +117,8 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
+    
+    /* السطرين الجدد لحل المشكلة */
+    position: relative; /* لكي يعمل الترتيب الرقمي */
+    z-index: 6;         /* يرفعه فوق تعتيم الخلفية (1) وفوق الحاوية (5) */
 }
